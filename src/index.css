@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+@layer base {
+    * {
+        @apply transition-colors duration-100 ease-linear
+    }
+
+    html {
+        @apply scroll-smooth
+    }
+
+    body {
+        @apply bg-gray w-screen overflow-x-hidden
+        dark:bg-dark-gray
+    }
+
+    h1,h2,h3,h4,h5,h6,p,span,a{
+        @apply text-dark-gray
+        dark:text-gray
+    }
+
+    .nav_logo{
+        font-family: "Satisfy";
+    }
+}
