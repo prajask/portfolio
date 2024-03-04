@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function Overview(){
     return(
         <article
-                className="h-[40vh]
+                className="h-[60vh]
                 flex flex-row items-center justify-start
                 border-b border-b-dark-primary"
             >
@@ -59,7 +59,6 @@ export default function Overview(){
                         >
                             Fine-Tuning the Complexity Out
                         </span>
-                        &nbsp;of Model Training
                     </h3>
                     <p>
                         We&apos;ve tried to simplify the fine-tuning process of computer vision models, making it accessible and engaging for everyone. For newcomers, our fine-tuning wizard simplifies the process with straightforward explanations allowing you to learn by directly interacting with model parameters—no jargon allowed. For those with a technical background, this feature offers the flexibility to experiment and optimize with advanced settings, ensuring your projects reach their full potential. With this approach, we aim to harness the power of computer vision, opening up a world of creative and practical applications.

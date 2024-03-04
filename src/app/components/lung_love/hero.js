@@ -98,8 +98,7 @@ export default function Hero(){
                 
                 <section
                     className="w-1/2 h-full
-                    flex flex-row items-center justify-evenly
-                    border-r border-dark-primary"
+                    flex flex-row items-center justify-evenly"
                 >
                     <RevealWrapper
                         className="w-[25%] -z-10"

@@ -8,7 +8,7 @@ export default function Health(){
     return(
         <>
             <article
-                className="h-[50vh]
+                className="h-[60vh]
                 flex flex-row items-center justify-start
                 border-b border-b-dark-primary"
             >

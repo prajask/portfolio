@@ -24,7 +24,7 @@ export default function Nav(){
 
     return(
     <header
-            className="fixed top-0
+            className="fixed top-0 z-50
             w-full
             bg-light-primary
             border-b border-b-dark-primary"
