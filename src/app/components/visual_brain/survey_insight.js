@@ -17,7 +17,7 @@ export default function SurveyInsight(){
                     flex flex-col justify-center"
                 >
                     <h2
-                        className="mb-[12px] text-xl"
+                        className="mb-[12px] text-xl font-medium"
                     >
                         Survey Insight
                     </h2>
@@ -35,7 +35,9 @@ export default function SurveyInsight(){
                         </span>
                         &nbsp;Eyeing Computer Vision
                     </h3>
-                    <p>
+                    <p
+                        className="text-lg"
+                    >
                         Through our survey, we&apos;ve gained valuable insights into the demographics, knowledge levels, and motivations of potential users interested in exploring computer vision. Our findings reveal a diverse age range with a core group aged 25-44, predominantly non-technical professionals, indicating a strong interest across various professional fields. This diversity highlights the need for a platform that bridges technical concepts with practical application in an intuitive manner.
                     </p>
                 </section>

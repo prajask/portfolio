@@ -4,7 +4,7 @@ export default function Reflection(){
     return(
         <>
             <article
-                className="h-[35vh]
+                className="h-[40vh]
                 border-b border-b-dark-primary"
             >
                 <section
@@ -13,7 +13,7 @@ export default function Reflection(){
                     flex flex-col justify-center"
                 >
                     <h2
-                        className="mb-[12px] text-xl"
+                        className="mb-[12px] text-xl font-medium"
                     >
                         Retrospective
                     </h2>
@@ -32,7 +32,9 @@ export default function Reflection(){
                         </span>
                         &nbsp;Sparked Our Design Journey
                     </h3>
-                    <p>
+                    <p
+                        className="text-lg"
+                    >
                         A key learning point for our team was the importance of blending direct user insights with secondary research. This strategy allowed us to go beyond the surface of immediate user feedback, leading to more holistic and far-reaching solutions for the users. This broader lens on the issue informed our design decisions, leading us to develop features that addressed a wide spectrum of user concerns. This experience highlighted the value of merging direct insights with in-depth research, a method crucial in crafting solutions that surpassed user expectations and significantly enhanced the overall user experience.
                     </p>
                 </section>

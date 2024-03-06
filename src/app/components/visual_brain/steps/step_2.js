@@ -37,7 +37,9 @@ export default function Step2(){
                         </span>
                         &nbsp;to Data Labeling
                     </h3>
-                    <p>
+                    <p
+                        className="text-lg"
+                    >
                         Accuracy in labeling is crucial for the success of a computer vision model. Our platform facilitates a structured approach to creating and applying labels, ensuring consistency and precision. By providing users with intuitive UI elements for the labeling process, we minimize errors and improve the quality of the training data, laying a solid foundation for a more effective model.
                     </p>
                 </section>

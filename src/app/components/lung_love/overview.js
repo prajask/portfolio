@@ -4,7 +4,7 @@ export default function Overview(){
     return(
         <>
             <article
-                    className="h-[40vh]
+                    className="h-[45vh]
                     flex flex-row items-center justify-start
                     border-b border-b-dark-primary"
                 >
@@ -15,7 +15,7 @@ export default function Overview(){
                         border-r border-r-dark-primary"
                     >
                         <h2
-                            className="mb-[12px] text-xl"
+                            className="mb-[12px] text-xl font-medium"
                         >
                             Problem 
                         </h2>
@@ -34,8 +34,10 @@ export default function Overview(){
                             </span>
                             &nbsp;in Smoking Cessaation
                         </h3>
-                        <p>
-                            Quitting smoking isn&apos;t just about saying no to cigarettes. It&apos;s a juggling act! The users need a friendly nudge in building a supportive community, keeping an eye on their health, and watching those savings grow as they ditch the smokes. Finding the perfect mix to tackle all these aspects while quitting smoking is a real head-scratcher for many!
+                        <p
+                            className="text-lg"
+                        >
+                            Quitting smoking isn&apos;t just about saying no to cigarettes. The users need a friendly nudge in building a supportive community, keeping an eye on their health, and watching those savings grow as they ditch the smokes. Finding this perfect mix is a real head-scratcher for many!
                         </p>
                     </section>
 
@@ -45,7 +47,7 @@ export default function Overview(){
                         flex flex-col justify-center"
                     >
                         <h2
-                            className="mb-[12px] text-xl"
+                            className="mb-[12px] text-xl font-medium"
                         >
                             Solution
                         </h2>
@@ -63,7 +65,9 @@ export default function Overview(){
                             </span>
                             &nbsp;of Friendly Community Cheer and Handy Progress Tracking.
                         </h3>
-                        <p>
+                        <p
+                            className="text-lg"
+                        >
                             With Lung Love, we&apos;ve developed a solution that&apos;s both fun and functional: an app that merges community engagement, health tracking, and financial monitoring. This trio offers a comprehensive approach to make the journey of quitting smoking more manageable and enjoyable.
                         </p>
                     </section>

@@ -45,7 +45,7 @@ export default function Hero(){
                         >
                             <p
                                 className="w-[20%]
-                                font-extrabold"
+                                font-bold"
                             >
                                 Duration
                             </p>
@@ -59,7 +59,7 @@ export default function Hero(){
                         >
                             <p
                                 className="w-[20%]
-                                font-extrabold"
+                                font-bold"
                             >
                                 Team Size
                             </p>
@@ -73,7 +73,7 @@ export default function Hero(){
                         >
                             <p
                                 className="w-[20%]
-                                font-extrabold"
+                                font-bold"
                             >
                                 Area
                             </p>
@@ -87,7 +87,7 @@ export default function Hero(){
                         >
                             <p
                                 className="w-[20%]
-                                font-extrabold"
+                                font-bold"
                             >
                                 My Role
                             </p>

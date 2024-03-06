@@ -8,7 +8,7 @@ export default function Steps(){
     return(
         <>
             <article
-                className="h-[45vh]
+                className="h-[50vh]
                 flex flex-row items-center justify-start
                 border-b border-b-dark-primary"
             >
@@ -37,7 +37,9 @@ export default function Steps(){
                         </span>
                         &nbsp;to Computer Vision
                     </h3>
-                    <p>
+                    <p
+                        className="text-lg"
+                    >
                         In our journey to make computer vsion more accessible, we recognized the importance of simplifying the model training process. Our aim was to design a platform that invites users from various backgrounds, especially those without a technical foundation, to not only engage with but also excel in the field of computer vision. This led to the creation of a four-step model training process, meticulously designed to be both comprehensive and accessible.
                     </p>
                 </section>

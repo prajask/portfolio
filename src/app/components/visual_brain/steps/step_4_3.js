@@ -8,7 +8,7 @@ export default function Step4_3(){
     return(
         <>
             <article
-                className="h-[40vh]
+                className="h-[45vh]
                 flex flex-row items-center justify-start
                 border-b border-b-dark-primary"
             >
@@ -36,7 +36,9 @@ export default function Step4_3(){
                             Controlled Precision
                         </span>
                     </h3>
-                    <p>
+                    <p
+                        className='text-lg'
+                    >
                         In designing the interface for our fine-tuning wizard, we chose to implement sliders for adjusting model parameters. This choice was driven by the dual goals of enhancing user experience and enforcing practical limits on parameter values. Sliders visually represent the range of possible adjustments, making it immediately clear to users how far they can tweak each setting. This method not only simplifies the interaction but also naturally prevents users from entering values that could destabilize the model training process. By incorporating sliders, we provide a guided yet flexible environment for experimentation, allowing users to easily explore the impact of different settings on their models while ensuring a level of safety and reliability in the fine-tuning process.
                     </p>
                 </section>
@@ -51,7 +53,7 @@ export default function Step4_3(){
             >
                 <RevealWrapper
                     origin='top' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-[25%] h-[50%] -z-10
+                    className="w-auto h-[50%] -z-10
                     p-[1%]
                     border-4 border-visual_brain-primary"
                 >
@@ -67,7 +69,7 @@ export default function Step4_3(){
                 
                 <RevealWrapper
                     origin='bottom' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-[25%] h-[50%] -z-10
+                    className="w-auto h-[50%] -z-10
                     p-[1%]
                     border-4 border-visual_brain-primary"
                 >
@@ -83,7 +85,7 @@ export default function Step4_3(){
 
                 <RevealWrapper
                     origin='top' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-[25%] h-[50%] -z-10
+                    className="w-auto h-[50%] -z-10
                     p-[1%]
                     border-4 border-visual_brain-primary"
                 >

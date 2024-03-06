@@ -8,7 +8,7 @@ export default function SecondaryHealthResearch(){
     return(
         <>
             <article
-                className="h-[40vh]
+                className="h-[45vh]
                 flex flex-row items-center justify-start
                 border-b border-b-dark-primary"
             >
@@ -19,7 +19,7 @@ export default function SecondaryHealthResearch(){
                     border-r border-dark-primary"
                 >
                     <h2
-                        className="mb-[12px] text-xl"
+                        className="mb-[12px] text-xl font-medium"
                     >
                         Secondary Research Insight
                     </h2>
@@ -33,7 +33,9 @@ export default function SecondaryHealthResearch(){
                     >
                         Beyond &apos;Lung&apos; Love
                     </h3>
-                    <p>
+                    <p
+                        className="text-lg"
+                    >
                         We delved into secondary research to gain a comprehensive understanding of the wider health impacts of smoking. The exploratory research revealed significant correlations between smoking and deteriorating oral and cardiovascular health. It became evident that smoking&apos;s impact goes beyond lung health, affecting gum disease, tooth decay, blood pressure, and heart health. Motivated by these findings, we decided it was crucial not only to track these specific health aspects within the app but also to educate users about them. Alongside the tracking features, informative screens were incorporated to shed light on how smoking affects these aspects of health.
                     </p>
                 </section>

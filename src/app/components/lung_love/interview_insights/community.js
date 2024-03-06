@@ -8,7 +8,7 @@ export default function Community(){
     return(
         <>
             <article
-                className="h-[50vh]
+                className="h-[75vh]
                 flex flex-row items-center justify-start
                 border-b border-b-dark-primary"
             >
@@ -19,7 +19,7 @@ export default function Community(){
                     border-r border-dark-primary"
                 >
                     <h2
-                        className="mb-[12px] text-xl"
+                        className="mb-[12px] text-xl font-medium"
                     >
                         Interview Insight
                     </h2>
@@ -38,7 +38,9 @@ export default function Community(){
                         </span>
                         &nbsp;for Every Quit Story
                     </h3>
-                    <p>
+                    <p
+                        className="text-lg"
+                    >
                         In Lung Love, we&apos;ve artfully woven together elements of community sharing and gamification, based on insights from our interviews. This feature is akin to a supportive gathering – a place where users can narrate their own quitting stories, each one a unique journey. At the same time, they get to showcase their earned badges and achievements, adding a dash of excitement to the mix. This fusion creates an environment where personal progress is not only acknowledged but celebrated as a collective achievement. It&apos;s a blend of support and celebration, transforming the journey to a smoke-free life into an engaging and communal experience. This approach strikes a balance between fostering a sense of belonging and injecting a playful, motivating spirit into the app.
                     </p>
                 </section>

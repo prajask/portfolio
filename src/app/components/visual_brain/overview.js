@@ -14,7 +14,7 @@ export default function Overview(){
                     border-r border-r-dark-primary"
                 >
                     <h2
-                        className="mb-[12px] text-xl"
+                        className="mb-[12px] text-xl font-medium"
                     >
                         Problem 
                     </h2>
@@ -32,7 +32,9 @@ export default function Overview(){
                             Complexity of Fine-Tuning
                         </span>
                     </h3>
-                    <p>
+                    <p
+                        className="text-lg"
+                    >
                         Computer vision represents an exciting technological domain that enables computers to interpret and analyze images and videos in a manner akin to human perception. However, one of the major hurdles in leveraging this technology is fine-tuning the models to achieve accurate results, especially for those without a deep technical background. The complexity involved in adjusting model parameters, and the overwhelming amount of technical jargon make the fine-tuning process daunting. This situation discourages many interested learners from exploring Computer vision.
                     </p>
                 </section>
@@ -43,7 +45,7 @@ export default function Overview(){
                     flex flex-col justify-center"
                 >
                     <h2
-                        className="mb-[12px] text-xl"
+                        className="mb-[12px] text-xl font-medium"
                     >
                         Solution
                     </h2>
@@ -60,8 +62,10 @@ export default function Overview(){
                             Fine-Tuning the Complexity Out
                         </span>
                     </h3>
-                    <p>
-                        We&apos;ve tried to simplify the fine-tuning process of computer vision models, making it accessible and engaging for everyone. For newcomers, our fine-tuning wizard simplifies the process with straightforward explanations allowing you to learn by directly interacting with model parameters—no jargon allowed. For those with a technical background, this feature offers the flexibility to experiment and optimize with advanced settings, ensuring your projects reach their full potential. With this approach, we aim to harness the power of computer vision, opening up a world of creative and practical applications.
+                    <p
+                        className="text-lg"
+                    >
+                        We&apos;ve tried to simplify the fine-tuning process of computer vision models, making it accessible for everyone. For newcomers, our fine-tuning wizard simplifies the process with straightforward explanations allowing you to learn by directly interacting with model parameters. For those with a technical background, this feature offers the flexibility to experiment and optimize with advanced settings, ensuring your projects reach their full potential. With this approach, we aim to harness the power of computer vision, opening up a world of creative and practical applications.
                     </p>
                 </section>
             </article>

@@ -17,7 +17,7 @@ export default function SurveyInsight(){
                     flex flex-col justify-center"
                 >
                     <h2
-                        className="mb-[12px] text-xl"
+                        className="mb-[12px] text-xl font-medium"
                     >
                         Survey Insight
                     </h2>
@@ -35,7 +35,9 @@ export default function SurveyInsight(){
                         </span>
                         &nbsp;The Prime Time for Change
                     </h3>
-                    <p>
+                    <p
+                        className="text-lg"
+                    >
                         Our survey aimed to gather demographic details and understand the smoking habits of potential app users. The results revealed a significant trend: the majority of smokers were in the 18-24 age group. However, the primary target audience for our smoking cessation app – those actively seeking to quit – predominantly fell in the 25-30 age range, often with about five years of smoking history. In 2023, this group is notably tech-savvy, making them more inclined to try out digital solutions like a dedicated cessation app.
                         <br/>
                         To maximize reach, we strategically placed surveys around the school campus and leveraged online channels through peer networks, ensuring diverse and comprehensive participation.

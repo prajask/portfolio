@@ -37,7 +37,9 @@ export default function Step1(){
                             Create or Curate?
                         </span>
                     </h3>
-                    <p>
+                    <p
+                        className="text-lg"
+                    >
                         At the heart of any computer vision model is the dataset. We simplified the initial step by offering users a choice: to create a new dataset or to utilize a pre-existing one. This flexibility allows users to either start from scratch, offering a learning experience in dataset creation, or to leverage existing datasets, accelerating the path to model training.
                     </p>
                 </section>
@@ -90,7 +92,7 @@ export default function Step1(){
             >
                 <RevealWrapper
                         origin='left' delay={200} duration={1000} distance='100px' reset={false}
-                        className="w-[40%] h-[75%] -z-10"
+                        className="w-auto h-[70%] -z-10"
                 >
                     <Image
                         className="w-full h-full"
@@ -104,7 +106,7 @@ export default function Step1(){
 
                 <RevealWrapper
                         origin='right' delay={200} duration={1000} distance='100px' reset={false}
-                        className="w-[40%] h-[75%] -z-10"
+                        className="w-auto h-[70%] -z-10"
                 >
                     <Image
                         className="w-full h-full"

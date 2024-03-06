@@ -8,7 +8,7 @@ export default function Step4_1(){
     return(
         <>
             <article
-                className="h-[55vh]
+                className="h-[60vh]
                 flex flex-row items-center justify-start
                 border-b border-b-dark-primary"
             >
@@ -37,7 +37,9 @@ export default function Step4_1(){
                         </span>
                         &nbsp;for Clarity
                     </h3>
-                    <p>
+                    <p
+                        className="text-lg"
+                    >
                         To make the complex task of fine-tuning models less daunting, we added clear descriptions for each parameter. These brief explanations help users understand what each adjustment does and how it affects their model. This method supports users, from beginners to those with some knowledge of computer vision, in making smarter choices about their models. By offering straightforward, easy-to-understand information, we help users connect more deeply with the technology and create a learning experience that feels more natural.
                     </p>
                 </section>

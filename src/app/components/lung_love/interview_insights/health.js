@@ -8,7 +8,7 @@ export default function Health(){
     return(
         <>
             <article
-                className="h-[60vh]
+                className="h-[75vh]
                 flex flex-row items-center justify-start
                 border-b border-b-dark-primary"
             >
@@ -19,7 +19,7 @@ export default function Health(){
                     border-r border-dark-primary"
                 >
                     <h2
-                        className="mb-[12px] text-xl"
+                        className="mb-[12px] text-xl font-medium"
                     >
                         Insight-Inspired Ideation
                     </h2>
@@ -37,7 +37,9 @@ export default function Health(){
                             Trauma-Informed Touch
                         </span>
                     </h3>
-                    <p>
+                    <p
+                        className="text-lg"
+                    >
                         We&apos;ve tailored the Health Tracking feature in Lung Love with a sprinkle of care and positivity. This feature isn&apos;t about scaring users with grim health warnings. Instead, it&apos;s like a friendly nudge showing how they&apos;re moving forward, health-wise. We&apos;re using a trauma-informed approach here – if a user&apos;s health indicators aren&apos;t improving, we don&apos;t bombard them with alarming messages. Rather, we consider that the stagnant progress is an indicator enough and encourage them to keep going. It&apos;s all about celebrating each small step towards better health. This way, we&apos;re not just tracking health; we&apos;re building a nurturing environment that cheers on every user, no matter where they are in their quitting journey. It&apos;s like having a supportive buddy who&apos;s always rooting for you, without the doom and gloom.
                     </p>
                 </section>

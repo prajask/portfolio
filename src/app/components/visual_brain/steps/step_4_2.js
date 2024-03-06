@@ -8,7 +8,7 @@ export default function Step4_2(){
     return(
         <>
             <article
-                className="h-[40vh]
+                className="h-[45vh]
                 flex flex-row items-center justify-start
                 border-b border-b-dark-primary"
             >
@@ -18,7 +18,7 @@ export default function Step4_2(){
                     flex flex-col justify-center"
                 >
                     <h2
-                        className="mb-[12px] text-xl"
+                        className="mb-[12px] text-xl font-medium"
                     >
                         Expert-Backed Secondary Research
                     </h2>
@@ -36,7 +36,9 @@ export default function Step4_2(){
                         </span>
                         &nbsp;&nbsp;for Smoother Tuning
                     </h3>
-                    <p>
+                    <p
+                        className="text-lg"
+                    >
                         To improve how users learn and interact with fine-tuning computer vision models, we carefully organized similar parameters together. This decision was based on secondary research and advice from technical experts. We talked to experts and looked into the best ways to group parameters, making the interface easier to use and helping users naturally understand how different settings affect their model. By organizing these options, we create a clear path for users, making complicated adjustments easier to manage. This setup promotes trying out new things and learning, giving users more confidence and insight as they adjust their models.
                     </p>
                 </section>
@@ -98,7 +100,7 @@ export default function Step4_2(){
             >
                 <RevealWrapper
                     origin='left' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-[40%] h-[80%] -z-10"
+                    className="w-auto h-[70%] -z-10"
                 >
                     <Image
                         className="w-full h-full"
@@ -112,7 +114,7 @@ export default function Step4_2(){
 
                 <RevealWrapper
                     origin='right' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-[40%] h-[80%] -z-10"
+                    className="w-auto h-[70%] -z-10"
                 >
                     <Image
                         className="w-full h-full"

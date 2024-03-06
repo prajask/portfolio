@@ -38,7 +38,7 @@ export default function Hero(){
                 flex flex-row items-center justify-center"
             >
                 <Image
-                    className="h-[65%]"
+                    className="h-[55%] w-auto"
                     src={"/AVATAR.gif"}
                     width={1920}
                     height={1080}

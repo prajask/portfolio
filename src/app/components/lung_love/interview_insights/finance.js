@@ -8,7 +8,7 @@ export default function Finance(){
     return(
         <>
             <article
-                className="h-[50vh]
+                className="h-[55vh]
                 flex flex-row items-center justify-start
                 border-b border-b-dark-primary"
             >
@@ -19,7 +19,7 @@ export default function Finance(){
                     border-r border-dark-primary"
                 >
                     <h2
-                        className="mb-[12px] text-xl"
+                        className="mb-[12px] text-xl font-medium"
                     >
                         User Insights and Ideation
                     </h2>
@@ -37,7 +37,9 @@ export default function Finance(){
                         </span>
                         &nbsp;as you quit
                     </h3>
-                    <p>
+                    <p
+                        className="text-lg"
+                    >
                         We discovered that financial incentives are a powerful motivator for quitting smoking. Our Finance Tracking feature illustrates the savings as users progress on their smoke-free journey. Additionally, the goal-setting feature transforms these savings into tangible goals, allowing users to visualize and plan for rewarding experiences. This approach elevates the quitting experience, gratifying the journey of watching savings grow.
                     </p>
                 </section>
