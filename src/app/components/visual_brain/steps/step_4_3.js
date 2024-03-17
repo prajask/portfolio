@@ -8,9 +8,9 @@ export default function Step4_3(){
     return(
         <>
             <article
-                className="h-[45vh]
-                flex flex-row items-center justify-start
-                border-b border-b-dark-primary"
+                className="flex flex-row items-center justify-start
+                border-b border-b-dark-primary
+                lg:h-[45vh]"
             >
                 <section
                     className="w-full h-full
@@ -46,16 +46,19 @@ export default function Step4_3(){
             </article>
 
             <article
-                className="h-[40vh]
-                px-[5%]
-                flex flex-row items-center justify-between
-                border-b border-b-dark-primary"
+                className="px-[5%] py-[24px]
+                flex flex-col items-center justify-between gap-5
+                border-b border-b-dark-primary
+                lg:h-[40vh]
+                lg:py-0
+                lg:flex-row lg:gap-0"
             >
                 <RevealWrapper
                     origin='top' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-auto h-[50%] -z-10
+                    className="w-[80%] h-[50%]
                     p-[1%]
-                    border-4 border-visual_brain-primary"
+                    border-4 border-visual_brain-primary
+                    lg:w-auto"
                 >
                     <Image
                         className="w-full h-full"
@@ -69,9 +72,10 @@ export default function Step4_3(){
                 
                 <RevealWrapper
                     origin='bottom' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-auto h-[50%] -z-10
+                    className="w-[80%] h-[50%]
                     p-[1%]
-                    border-4 border-visual_brain-primary"
+                    border-4 border-visual_brain-primary
+                    lg:w-auto"
                 >
                     <Image
                         className="w-full h-full"
@@ -85,9 +89,10 @@ export default function Step4_3(){
 
                 <RevealWrapper
                     origin='top' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-auto h-[50%] -z-10
+                    className="w-[80%] h-[50%]
                     p-[1%]
-                    border-4 border-visual_brain-primary"
+                    border-4 border-visual_brain-primary
+                    lg:w-auto"
                 >
                     <Image
                         className="w-full h-full"

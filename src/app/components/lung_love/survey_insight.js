@@ -8,8 +8,8 @@ export default function SurveyInsight(){
     return(
         <>
             <article
-                className="h-[40vh]
-                border-b border-b-dark-primary"
+                className="border-b border-dark-primary
+                lg:h-[40vh]"
             >
                 <section
                     className="w-full h-full
@@ -46,19 +46,23 @@ export default function SurveyInsight(){
             </article>
 
             <article
-                className="h-[50vh]
-                flex flex-row items-center justify-start
-                border-b border-b-dark-primary"
+                className="flex flex-col items-center justify-start
+                border-b border-dark-primary
+                lg:h-[50vh]
+                lg:flex-row"
             >
                 <secion
-                    className="w-1/2 h-full
+                    className="w-full
                     px-[5%] py-[24px]
-                    flex flex-col justify-center
-                    border-r border-r-dark-primary"
+                    flex flex-col items-center justify-center
+                    border-b border-dark-primary
+                    lg:w-1/2 lg:h-full
+                    lg:items-start
+                    lg:border-r lg:border-b-0"
                 >
                     <RevealWrapper
                         origin='left' delay={200} duration={1000} distance='100px' reset={false}
-                        className="w-[80%] -z-10"
+                        className="w-[80%]"
                     >
                         <Image
                             className="w-full"
@@ -72,14 +76,15 @@ export default function SurveyInsight(){
                 </secion>
 
                 <section
-                    origin='right' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-1/2 h-full
+                    className="w-full
                     px-[5%] py-[24px]
-                    flex flex-row items-center justify-center"
+                    flex flex-col items-center justify-center
+                    lg:w-1/2 lg:h-full
+                    lg:items-start"
                 >
                     <RevealWrapper
                         origin='right' delay={200} duration={1000} distance='100px' reset={false}
-                        className="w-[80%] -z-10"
+                        className="w-[80%]"
                     >
                         <Image
                             className="w-full"

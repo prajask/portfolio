@@ -4,8 +4,8 @@ export default function Reflection(){
     return(
         <>
             <article
-                className="h-[45vh]
-                border-b border-b-dark-primary"
+                className="border-b border-dark-primary
+                lg:h-[45vh]"
             >
                 <section
                     className="w-full h-full

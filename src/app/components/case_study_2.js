@@ -7,14 +7,18 @@ import Link from "next/link"
 export default function CaseStudy2(){
     return(
         <article
-            className="h-[60vh]
-            flex flex-row items-center justify-start
-            border-b border-b-dark-primary"
+            className="flex flex-col-reverse items-center justify-start
+            lg:border-b lg:border-dark-primary
+            lg:h-[60vh]
+            lg:flex-row"
         >
             <section
-                className="w-1/2 h-full
+                className="py-[24px]
                 flex flex-row items-center justify-evenly
-                border-r border-dark-primary"
+                border-b border-dark-primary
+                lg:w-1/2 lg:h-full
+                lg:py-0
+                lg:border-r lg:border-b-0"
             >
                 <RevealWrapper
                     className="w-[25%]"
@@ -60,9 +64,12 @@ export default function CaseStudy2(){
             </section>
 
             <section
-                className="w-1/2
+                className="w-full
                 px-[5%] py-[24px]
-                flex flex-col items-start justify-center"
+                flex flex-col items-start justify-center
+                border-b border-dark-primary
+                lg:w-1/2 lg:h-full
+                lg:border-b-0"
             >
                 <h2
                     className="mb-[8px]

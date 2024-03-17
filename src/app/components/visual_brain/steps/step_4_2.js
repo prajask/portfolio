@@ -8,9 +8,10 @@ export default function Step4_2(){
     return(
         <>
             <article
-                className="h-[45vh]
-                flex flex-row items-center justify-start
-                border-b border-b-dark-primary"
+                className="flex flex-col items-center justify-start
+                border-b border-dark-primary
+                lg:h-[45vh]
+                lg:flex-row"
             >
                 <section
                     className="w-full h-full
@@ -46,13 +47,16 @@ export default function Step4_2(){
             </article>
 
             <article
-                className="h-[65vh]
-                flex flex-row items-center justify-evenly
-                border-b border-b-dark-primary"
+                className="flex flex-row items-center justify-evenly
+                py-[24px]
+                border-b border-dark-primary
+                lg:h-[65vh]
+                lg:py-0"
             >
                 <RevealWrapper
                     origin='bottom' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-[25%] h-[80%] -z-10"
+                    className="w-[35%] h-[80%]
+                    lg:w-[25%]"
                 >
                     <Image
                         className="w-full h-full"
@@ -66,7 +70,7 @@ export default function Step4_2(){
 
                 <RevealWrapper
                     origin='left' delay={400} duration={1000} distance='100px' reset={false}
-                    className="w-[4%] -z-10"
+                    className="w-[4%]"
                 >
                     <Image
                         className="w-full"
@@ -80,7 +84,8 @@ export default function Step4_2(){
 
                 <RevealWrapper
                     origin='top' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-[25%] h-[80%] -z-10"
+                    className="w-[35%] h-[80%]
+                    lg:w-[25%]"
                 >
                     <Image
                         className="w-full h-full"
@@ -94,13 +99,17 @@ export default function Step4_2(){
             </article>
 
             <article
-                className="h-[65vh]
-                flex flex-row items-center justify-evenly
-                border-b border-b-dark-primary"
+                className="flex flex-col items-center justify-evenly
+                py-[24px]
+                border-b border-dark-primary
+                lg:h-[65vh]
+                lg:py-0
+                lg:flex-row"
             >
                 <RevealWrapper
                     origin='left' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-auto h-[70%] -z-10"
+                    className="w-[80%] h-[70%]
+                    lg:w-auto"
                 >
                     <Image
                         className="w-full h-full"
@@ -114,7 +123,8 @@ export default function Step4_2(){
 
                 <RevealWrapper
                     origin='right' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-auto h-[70%] -z-10"
+                    className="w-[80%] h-[70%]
+                    lg:w-auto"
                 >
                     <Image
                         className="w-full h-full"

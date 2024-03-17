@@ -6,15 +6,19 @@ import { RevealWrapper } from "next-reveal"
 export default function Hero(){
     return(
         <main 
-            className="h-[80vh] mt-[70px]
-            flex flex-row items-center justify-start
-            border-b border-b-dark-primary"
+            className="mt-[70px]
+            flex flex-col items-center justify-start
+            border-b border-b-dark-primary
+            lg:h-[80vh]
+            lg:flex-row"
         >
             <section
-                className="w-1/2 h-full
+                className="w-full
                 px-[5%] py-[24px]
-                flex flex-col justify-evenly
-                border-r border-r-dark-primary"
+                flex flex-col justify-evenly gap-10
+                lg:w-1/2 lg:h-full
+                lg:gap-0
+                lg:border-r lg:border-r-dark-primary"
             >
                 <h1
                     className=" 
@@ -22,7 +26,7 @@ export default function Hero(){
                     text-3xl font-bold"
                 >
                     <span>User Experience</span>
-                    <span>Designer and Engineer</span>
+                    <span>Engineer and Designer</span>
                 </h1>
 
                 <h2
@@ -34,8 +38,8 @@ export default function Hero(){
             
             <RevealWrapper
                 origin='bottom' delay={200} duration={1000} distance='100px' reset={false}
-                className="w-1/2 h-full -z-10
-                flex flex-row items-center justify-center"
+                className="hidden w-1/2 h-full -z-10
+                lg:flex lg:flex-row lg:items-center lg:justify-center"
             >
                 <Image
                     className="h-[55%] w-auto"

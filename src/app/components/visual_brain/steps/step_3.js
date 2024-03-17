@@ -8,15 +8,18 @@ export default function Step3(){
     return(
         <>
             <article
-                className="h-[55vh]
-                flex flex-row items-center justify-start
-                border-b border-b-dark-primary"
+                className="flex flex-col items-center justify-start
+                border-b border-dark-primary
+                lg:h-[55vh]
+                lg:flex-row"
             >
                 <section
-                    className="w-1/2 h-full
+                    className="w-full
                     px-[5%] py-[24px]
                     flex flex-col justify-center
-                    border-r border-dark-primary"
+                    border-b border-dark-primary
+                    lg:w-1/2 lg:h-full
+                    lg:border-r lg:border-b-0"
                 >
                     {/* <h2
                         className="mb-[12px] text-xl"
@@ -46,12 +49,15 @@ export default function Step3(){
                 </section>
 
                 <section
-                    className="w-1/2 h-full
-                    flex flex-row items-center justify-center"
+                    className="w-full
+                    py-[24px]
+                    flex flex-row items-center justify-center
+                    lg:w-1/2 lg:h-full
+                    lg:py-0"
                 >
                     <RevealWrapper
                         origin='right' delay={200} duration={1000} distance='100px' reset={false}
-                        className="w-[80%] -z-10"
+                        className="w-[80%]"
                     >
                         <Image
                             className="w-full"
@@ -67,13 +73,17 @@ export default function Step3(){
             </article>
 
             <article
-                className="h-[65vh]
-                flex flex-row items-center justify-center
-                border-b border-b-dark-primary"
+                className="py-[24px]
+                flex flex-col items-center justify-center
+                border-b border-dark-primary
+                lg:h-[65vh]
+                lg:py-0
+                lg:flex-row"
             >
                 <RevealWrapper
                     origin='left' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-[45%] h-[65%] -z-10"
+                    className="w-[90%]
+                    lg:w-[45%] lg:h-[65%]"
                 >
                     <Image
                         className="w-full h-full"
@@ -87,7 +97,8 @@ export default function Step3(){
 
                 <RevealWrapper
                     origin='right' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-[45%] h-[75%] -z-10"
+                    className="w-[90%]
+                    lg:w-[45%] lg:h-[75%]"
                 >
                     <Image
                         className="w-full h-full"
@@ -101,13 +112,17 @@ export default function Step3(){
             </article>
 
             <article
-                className="h-[65vh]
-                flex flex-row items-center justify-evenly
-                border-b border-b-dark-primary"
+                className="py-[24px]
+                flex flex-col items-center justify-evenly
+                border-b border-dark-primary
+                lg:h-[65vh]
+                lg:py-0
+                lg:flex-row"
             >
                 <RevealWrapper
                     origin='left' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-auto h-[70%] -z-10"
+                    className="w-[80%] h-[70%]
+                    lg:w-auto"
                 >
                     <Image
                         className="w-full h-full"
@@ -121,7 +136,8 @@ export default function Step3(){
 
                 <RevealWrapper
                     origin='right' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-auto h-[70%] -z-10"
+                    className="w-[80%] h-[70%]
+                    lg:w-auto"
                 >
                     <Image
                         className="w-full h-full"

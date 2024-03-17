@@ -8,15 +8,18 @@ export default function Community(){
     return(
         <>
             <article
-                className="h-[75vh]
-                flex flex-row items-center justify-start
-                border-b border-b-dark-primary"
+                className="flex flex-col items-center justify-start
+                border-b border-b-dark-primary
+                lg:h-[75vh]
+                lg:flex-row"
             >
                 <section
-                    className="w-1/2 h-full
+                    className="w-full
                     px-[5%] py-[24px]
                     flex flex-col justify-center
-                    border-r border-dark-primary"
+                    border-b border-dark-primary
+                    lg:w-1/2 lg:h-full
+                    lg:border-r lg:border-b-0"
                 >
                     <h2
                         className="mb-[12px] text-xl font-medium"
@@ -46,8 +49,9 @@ export default function Community(){
                 </section>
 
                 <section
-                    className="w-1/2 h-full
-                    flex flex-row items-center justify-center"
+                    className="w-full
+                    flex flex-row items-center justify-center
+                    lg:w-1/2 lg:h-full"
                 >
                     <Image
                         className="w-[80%]"
@@ -62,9 +66,11 @@ export default function Community(){
             </article>
 
             <article
-                className="h-[65vh]
+                className="py-[24px]
                 flex flex-row items-center justify-center
-                border-b border-b-dark-primary"
+                border-b border-b-dark-primary
+                lg:h-[65vh]
+                lg:py-0"
             >
                 <section
                     className="w-full h-full
@@ -72,11 +78,12 @@ export default function Community(){
                 >
                     <RevealWrapper 
                         origin='top' delay={200} duration={1000} distance='100px' reset={false}
-                        className="w-[47%] -z-10
+                        className="w-[47%]
                             flex flex-row items-center justify-center"
                     >
                         <Image
-                            className="w-[80%]"
+                            className="w-full
+                            lg:w-[80%]"
                             src={"/lung_love/community-lofi.png"}
                             width={1815}
                             height={852}
@@ -87,7 +94,7 @@ export default function Community(){
 
                     <RevealWrapper 
                         origin='left' delay={400} duration={1000} distance='100px' reset={false}
-                        className="w-[6%] -z-10
+                        className="w-[6%]
                             flex flex-row items-center justify-center"
                     >
                         <Image
@@ -102,7 +109,7 @@ export default function Community(){
 
                     <RevealWrapper 
                         origin='bottom' delay={200} duration={1000} distance='100px' reset={false}
-                        className="w-[47%] -z-10
+                        className="w-[47%]
                             flex flex-row items-center justify-center">
                         <Image
                             className="w-[30%]"
@@ -117,9 +124,11 @@ export default function Community(){
             </article>
 
             <article
-                className="h-[65vh]
+                className="py-[24px]
                 flex flex-row items-center justify-center
-                border-b border-b-dark-primary"
+                border-b border-b-dark-primary
+                lg:h-[65vh]
+                lg:py-0"
             >
                 <section
                     className="w-full h-full
@@ -127,11 +136,12 @@ export default function Community(){
                 >
                     <RevealWrapper 
                         origin='bottom' delay={200} duration={1000} distance='100px' reset={false}
-                        className="w-[47%] -z-10
+                        className="w-[47%]
                         flex flex-row items-center justify-center"
                     >
                         <Image
-                            className="w-[95%]"
+                            className="w-full
+                            lg:w-[95%]"
                             src={"/lung_love/achievements-lofi.png"}
                             width={1916}
                             height={854}

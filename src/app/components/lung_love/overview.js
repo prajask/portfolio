@@ -4,15 +4,18 @@ export default function Overview(){
     return(
         <>
             <article
-                    className="h-[45vh]
-                    flex flex-row items-center justify-start
-                    border-b border-b-dark-primary"
+                    className="flex flex-col items-center justify-start
+                    border-b border-dark-primary
+                    lg:h-[45vh]
+                    lg:flex-row"
                 >
                     <section
-                        className="w-1/2 h-full
+                        className="w-full
                         px-[5%] py-[24px]
                         flex flex-col justify-center
-                        border-r border-r-dark-primary"
+                        border-b border-dark-primary
+                        lg:w-1/2 lg:h-full
+                        lg:border-r lg:border-b-0"
                     >
                         <h2
                             className="mb-[12px] text-xl font-medium"
@@ -42,9 +45,10 @@ export default function Overview(){
                     </section>
 
                     <section
-                        className="w-1/2 h-full
+                        className="w-full
                         px-[5%] py-[24px]
-                        flex flex-col justify-center"
+                        flex flex-col justify-center
+                        lg:w-1/2 lg:h-full"
                     >
                         <h2
                             className="mb-[12px] text-xl font-medium"
@@ -74,12 +78,15 @@ export default function Overview(){
                 </article>
 
                 <article
-                    className="h-[75vh]
-                    flex flex-row items-center justify-center
-                    border-b border-b-dark-primary"
+                    className="flex flex-row items-center justify-center
+                    border-b border-dark-primary
+                    lg:h-[75vh]"
                 >
                     <Image
-                            className="w-[50%]"
+                            className="w-[90%]
+                            py-[24px]
+                            lg:w-[50%]
+                            lg:py-0"
                             src={"/lung_love/overview.webp"}
                             width={2492}
                             height={1667}

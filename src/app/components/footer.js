@@ -12,15 +12,20 @@ export default function Footer(){
 
     return(
         <footer
-            className="h-[20vh]
-            flex flex-row items-center justify-start
-            border-b border-b-dark-primary"
+            className="flex flex-col-reverse items-center justify-start
+            border-b border-dark-primary
+            lg:h-[20vh]
+            lg:flex-row"
         >
             <section
-                className="w-1/2 h-full
-                pl-[5%]
-                flex flex-col items-start justify-end
-                border-r border-r-dark-primary"
+                className="w-full
+                pl-[5%] py-[12px]
+                flex flex-col items-start justify-start gap-5
+                border-r border-r-dark-primary
+                lg:w-1/2 lg:h-full
+                lg:py-0
+                lg:gap-0
+                lg:justify-end"
             >
                 <p
                     className="text-lg"
@@ -36,10 +41,15 @@ export default function Footer(){
 
             <RevealList
                 interval={50} delay={200}
-                className="w-1/2 h-full
-                pl-[5%]
-                flex flex-col justify-evenly
-                list-none"
+                className="w-full
+                pl-[5%] py-[12px]
+                flex flex-col justify-evenly gap-5
+                list-none
+                border-b border-dark-primary
+                lg:w-1/2 lg:h-full
+                lg:py-0
+                lg:gap-0
+                lg:border-b-0"
             >
                 <li>
                         <a

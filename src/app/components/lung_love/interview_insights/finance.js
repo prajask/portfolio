@@ -8,15 +8,18 @@ export default function Finance(){
     return(
         <>
             <article
-                className="h-[55vh]
-                flex flex-row items-center justify-start
-                border-b border-b-dark-primary"
+                className="flex flex-col items-center justify-start
+                border-b border-dark-primary
+                lg:h-[55vh]
+                lg:flex-row"
             >
                 <section
-                    className="w-1/2 h-full
+                    className="w-full
                     px-[5%] py-[24px]
                     flex flex-col justify-center
-                    border-r border-dark-primary"
+                    border-b border-dark-primary
+                    lg:w-1/2 lg:h-full
+                    lg:border-r lg:border-b-0"
                 >
                     <h2
                         className="mb-[12px] text-xl font-medium"
@@ -45,8 +48,9 @@ export default function Finance(){
                 </section>
 
                 <section
-                    className="w-1/2 h-full
-                    flex flex-row items-center justify-center"
+                    className="w-full
+                    flex flex-row items-center justify-center
+                    lg:w-1/2 lg:h-full"
                 >
                     <Image
                         className="w-[80%]"
@@ -61,13 +65,16 @@ export default function Finance(){
             </article>
 
             <article
-                className="h-[65vh]
+                className="py-[24px]
                 flex flex-row items-center justify-center
-                border-b border-b-dark-primary"
+                border-b border-b-dark-primary
+                lg:h-[65vh]
+                lg:py-0"
             >
                 <RevealWrapper
                     origin='bottom' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-[15%] -z-10"
+                    className="w-[25%]
+                    lg:w-[15%]"
                 >
                     <Image
                         className="w-full"

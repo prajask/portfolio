@@ -8,15 +8,15 @@ export default function SecondaryHealthResearch(){
     return(
         <>
             <article
-                className="h-[45vh]
-                flex flex-row items-center justify-start
-                border-b border-b-dark-primary"
+                className="flex flex-row items-center justify-start
+                border-b border-dark-primary
+                lg:h-[45vh]"
             >
                 <section
                     className="w-full h-full
                     px-[5%] py-[24px]
                     flex flex-col justify-center
-                    border-r border-dark-primary"
+                    lg:border-r border-dark-primary"
                 >
                     <h2
                         className="mb-[12px] text-xl font-medium"
@@ -42,14 +42,17 @@ export default function SecondaryHealthResearch(){
             </article>
 
             <article
-            className="h-[65vh]
-            flex flex-row items-center justify-evenly
-            border-b border-b-dark-primary"
+                className="flex flex-row items-center justify-evenly
+                py-[24px]
+                border-b border-b-dark-primary
+                lg:h-[65vh]
+                lg:py-0"
             >
 
                 <RevealWrapper
                     origin='bottom' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-[15%] -z-10"
+                    className="w-[25%]
+                    lg:w-[15%]"
                 >
                     <Image
                         className="w-full"
@@ -63,7 +66,8 @@ export default function SecondaryHealthResearch(){
 
                 <RevealWrapper
                     origin='top' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-[15%] -z-10"
+                    className="w-[25%]
+                    lg:w-[15%]"
                 >
                     <Image
                         className="w-full"
@@ -77,7 +81,8 @@ export default function SecondaryHealthResearch(){
 
                 <RevealWrapper
                     origin='bottom' delay={200} duration={1000} distance='100px' reset={false}
-                    className="w-[15%] -z-10"
+                    className="w-[25%]
+                    lg:w-[15%]"
                 >
                     <Image
                         className="w-full"

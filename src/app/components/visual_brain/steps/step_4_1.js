@@ -8,15 +8,18 @@ export default function Step4_1(){
     return(
         <>
             <article
-                className="h-[60vh]
-                flex flex-row items-center justify-start
-                border-b border-b-dark-primary"
+                className="flex flex-col items-center justify-start
+                border-b border-dark-primary
+                lg:h-[60vh]
+                lg:flex-row"
             >
                 <section
-                    className="w-1/2 h-full
+                    className="w-full
                     px-[5%] py-[24px]
                     flex flex-col justify-center
-                    border-r border-dark-primary"
+                    border-b border-dark-primary
+                    lg:w-1/2 lg:h-full
+                    lg:border-r lg:border-b-0"
                 >
                     {/* <h2
                         className="mb-[12px] text-xl"
@@ -45,8 +48,11 @@ export default function Step4_1(){
                 </section>
 
                 <section
-                    className="w-1/2 h-full
-                    flex flex-row items-center justify-center"
+                    className="w-full
+                    py-[24px]
+                    flex flex-row items-center justify-center
+                    lg:w-1/2 lg:h-full
+                    lg:py-0"
                 >
                     <RevealWrapper
                         origin='right' delay={200} duration={1000} distance='100px' reset={false}
