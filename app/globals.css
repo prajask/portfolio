@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fbf9f3;
+  --primary: #2f2e2e;
+  --primary-100: #f5f3ed;
+  --ibm: #0f62fe;
+  --mosi: #1D375B;
+  --mosi-secondary: #31b0c9;
+}
+
+body {
+  color: var(--primary);
+  background: var(--background);
+}
+
+.column{
+  @apply w-full self-stretch;
+}
+
+.column-left{
+  @apply xl:mr-[5%];
+}
+
+.column-right{
+  @apply xl:ml-[5%];
+}
+
+.case-study-section{
+  @apply w-full py-12 border-b border-b-text-primary;
+}
+
+.case-study-section.subsection{
+  @apply border-dashed;
+}
+
+.section-title{
+  @apply uppercase pb-2;
+}
+
+.section-subtitle{
+  @apply font-bold text-2xl pb-8;
+}
