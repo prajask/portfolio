@@ -1,30 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        "background": "var(--background)",
-        "text-primary": "var(--primary)",
-        "primary-100": "var(--primary-100)",
+        "dark": "var(--dark)",
+        "light": "var(--light)",
+        "primary": "var(--primary)",
+        "gray": "var(--gray)",
+        "dark-gray": "var(--dark-gray)",
         "ibm": "var(--ibm)",
+        "ibm-highlight": "var(--ibm-highlight)",
         "mosi": "var(--mosi)",
-        "mosi-secondary": "var(--mosi-secondary)"
+        "twilio": "var(--twilio)"
       },
-
-      animation: {
-        'gradient': 'gradient 3.5s linear infinite reverse',
-      },
-
-      keyframes: {
-        'gradient': {
-          to: { 'background-position': '200% center' },
-        }
-      }
     },
   },
   plugins: [],
