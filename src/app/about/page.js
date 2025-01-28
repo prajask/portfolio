@@ -57,7 +57,7 @@ const page = () => {
                         lg:items-end lg:justify-end"
                     >
                         <Image
-                        className="rounded"
+                        className="rounded -rotate-90 lg:rotate-0"
                         src="/about/me.jpg"
                         alt="Prajas Kadepurkar - Portrait"
                         width={3024}
@@ -110,7 +110,7 @@ const page = () => {
                             <Image width={4744} height={3163} className="h-auto max-w-full rounded-lg" src="/photography/20151004.jpg" alt=""/>
                         </div>
                         <div>
-                            <Image width={3024} height={4032} className="h-auto max-w-full rounded-lg" src="/photography/IMG_0469.jpg" alt=""/>
+                            <Image width={3024} height={4032} className="h-auto max-w-full rounded-lg -rotate-90 lg:rotate-0" src="/photography/IMG_0469.jpg" alt=""/>
                         </div>
                     </div>
 
@@ -121,7 +121,7 @@ const page = () => {
                         className="grid gap-4"
                     >
                         <div>
-                            <Image width={3024} height={4032} className="h-auto max-w-full rounded-lg" src="/photography/IMG_0562.jpg" alt=""/>
+                            <Image width={3024} height={4032} className="h-auto max-w-full rounded-lg -rotate-90 lg:rotate-0" src="/photography/IMG_0562.jpg" alt=""/>
                         </div>
                         <div>
                             <Image width={6000} height={4000} className="h-auto max-w-full rounded-lg" src="/photography/DSC_0139.jpg" alt=""/>
