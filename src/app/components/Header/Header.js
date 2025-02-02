@@ -14,7 +14,7 @@ export const Header = () => {
         },
         {
             label: "Resume",
-            link: "https://drive.google.com/file/d/1uANbyX8WE2Yf8HpvtaeaRQpGiL6-Aek0/view?usp=sharing",
+            link: "https://drive.google.com/file/d/1uANbyX8WE2Yf8HpvtaeaRQpGiL6-Aek0/view?usp=drive_link",
             target: "_blank"
         }
     ];
