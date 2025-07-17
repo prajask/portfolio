@@ -25,7 +25,7 @@ const page = () => {
 						<figure className="w-full lg:w-1/3 aspect-square relative border-2 border-border-primary shadow-project-card">
 							<Image
 								className="object-cover"
-								src="/about.jpg"
+								src="/about.JPG"
 								alt=""
 								fill
 							/>
