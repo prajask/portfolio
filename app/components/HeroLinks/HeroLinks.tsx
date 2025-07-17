@@ -9,7 +9,7 @@ const HeroLinks = async () => {
 		<div className="pb-2 w-full flex items-center space-x-8 z-10">
 			{socialLinks.map((link, index) => {
 				return (
-					!(link.name == "Instagram" || link.name == "Email") && (
+					!(link.name == "Instagram" || link.name == "Resume") && (
 						<Link
 							key={index}
 							href={link.url}
@@ -23,7 +23,7 @@ const HeroLinks = async () => {
 						>
 							<DynamicIcon size="20" icon={link.icon} />
 							<span
-								className={`${link.name != "Resume" ? "hidden" : ""} md:block`}
+								className={`hidden md:block`}
 							>
 								{link.name}
 							</span>
