@@ -14,7 +14,7 @@ export default function Home() {
 							</h2>
 							<p className="font-plex-sans font-semibold text-text-primary text-3xl tracking-widest text-shadow-primary leading-10">
 								Building Human-centered interfaces <br /> from
-								inital concepts to implementation.
+								initial concepts to implementation.
 							</p>
 						</div>
 						<HeroLinks/>
