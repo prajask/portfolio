@@ -1,5 +1,3 @@
-import HeroLinks from "@/app/components/HeroLinks/HeroLinks";
-import Image from "next/image";
 import { BiBriefcase, BiSolidGraduation } from "react-icons/bi";
 
 const WORK_EXPERIENCE = [
