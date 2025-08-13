@@ -1,82 +1,108 @@
+import HeroLinks from "@/app/components/HeroLinks/HeroLinks";
 import Image from "next/image";
+import { BiBriefcase, BiSolidGraduation } from "react-icons/bi";
+
+const WORK_EXPERIENCE = [
+	{
+		position: "UX Designer & Engineer",
+		company: "Mosi Audio",
+		duration: "Mar 2025 - Present",
+	},
+	{
+		position: "UX Engineer",
+		company: "IBM",
+		duration: "Apr 2024 - Dec 2024",
+	},
+	{
+		position: "Software Development Consultant",
+		company: "Capgemini",
+		duration: "Nov 2020 - Jul 2023",
+	},
+];
+
+const EDUCATION = [
+	{
+		school: "University of California, Santa Cruz",
+		degree: "M.S. Human-Computer Interaction",
+		duration: "Sep 2023 - Dec 2024",
+	},
+	{
+		school: "University of Mumbai",
+		degree: "B.E. Computer Engineering",
+		duration: "Aug 2016 - Oct 2020",
+	},
+];
 
 const page = () => {
 	return (
 		<article className="w-full">
-			<section className="w-full py-20 border-b border-border-primary">
-				<div className="w-11/12 max-w-7xl mx-auto">
-					<div className="w-full flex flex-col lg:flex-row space-y-8 lg:space-y-0 justify-between">
-						<div className="w-full lg:w-1/2 flex flex-col space-y-4">
-							<h2 className="font-plex-mono font-semibold text-text-primary text-2xl">
-								Hey there! I am Prajas...
-							</h2>
-							<h3 className="font-plex-mono font-medium text-xl text-text-secondary">
-								a UX Engineer based in San Francisco,
-								California.
-							</h3>
-							<p className="font-plex-sans text-text-secondary leading-7">
-								I enjoy building Human-Centered Interfaces,
-								starting with user research, shaping early
-								concepts, prototyping interactions quickly, and
-								turning them into functional, testable
-								experiences.
-							</p>
-						</div>
-						<figure className="w-full lg:w-1/3 aspect-square relative border-2 border-border-primary shadow-project-card">
-							<Image
-								className="object-cover"
-								src="/about.JPG"
-								alt=""
-								fill
-							/>
-						</figure>
-					</div>
-				</div>
-			</section>
-			<section className="w-full py-20 border-b border-border-primary">
-				<div className="w-11/12 max-w-7xl mx-auto">
-					<figure className="w-full aspect-video relative border-2 border-border-primary">
-						<Image
-							className="object-cover"
-							src="/skills.png"
-							alt=""
-							fill
-						/>
-					</figure>
-				</div>
-			</section>
-			{/* <section className="w-full py-20 border-b border-border-primary">
-				<div className="w-11/12 max-w-7xl mx-auto">
-					<div className="w-full flex flex-col space-y-4">
-						<h2 className="font-plex-mono font-semibold text-text-primary text-2xl">
-							How I got here...
+			<section className="w-full py-20">
+				<div className="w-11/12 max-w-7xl mx-auto flex space-x-12">
+					<div className="w-full flex flex-col border-[1.5px] border-border-secondary rounded-2xl">
+						<h2 className="p-4 font-plex-mono font-medium uppercase border-b-1 border-border-secondary">
+							Experience
 						</h2>
-						<p className="font-plex-sans text-text-secondary">
-							Lorem, ipsum dolor sit amet consectetur adipisicing
-							elit. Architecto obcaecati necessitatibus, odit
-							porro corrupti placeat! Culpa natus inventore
-							adipisci. Facilis, voluptas! Inventore, illo? Libero
-							sint dolorum alias. Exercitationem, nobis velit?
-						</p>
+						<ul className="list-none">
+							{WORK_EXPERIENCE.map(
+								(experience, index, { length }) => {
+									return (
+										<li
+											key={experience.duration}
+											className={`w-full ${index === length - 1 ? "border-b-0" : "border-b-[1.5px]"} border-border-secondary bg-background-secondary`}
+										>
+											<div className="p-4 flex items-start space-x-4">
+												<BiBriefcase
+													size={40}
+													className="shrink-0 p-1 mt-1 border-[1.5px] border-border-secondary rounded-xl"
+												/>
+												<div className="w-full flex flex-col">
+													<h3 className="font-plex-sans font-medium">
+														{experience.position}
+													</h3>
+													<h4>
+														{experience.company}
+													</h4>
+													<p>{experience.duration}</p>
+												</div>
+											</div>
+										</li>
+									);
+								}
+							)}
+						</ul>
+					</div>
+
+					<div className="w-full flex flex-col border-[1.5px] border-border-secondary rounded-2xl">
+						<h2 className="p-4 font-plex-mono font-medium uppercase border-b-[1.5px] border-border-secondary">
+							Education
+						</h2>
+						<ul className="list-none">
+							{EDUCATION.map((education, index, {length}) => {
+								return (
+									<li
+										key={education.duration}
+										className={`w-full ${index === length - 1 ? "border-b-0" : "border-b-[1.5px]"} border-border-secondary bg-background-secondary`}
+									>
+										<div className="p-4 flex items-start space-x-4">
+											<BiSolidGraduation
+												size={40}
+												className="shrink-0 p-1 mt-1 border-[1.5px] border-border-secondary rounded-xl"
+											/>
+											<div className="w-full flex flex-col">
+												<h3 className="font-plex-sans font-medium">
+													{education.school}
+												</h3>
+												<h4>{education.degree}</h4>
+												<p>{education.duration}</p>
+											</div>
+										</div>
+									</li>
+								);
+							})}
+						</ul>
 					</div>
 				</div>
 			</section>
-			<section className="w-full py-20 border-b border-border-primary">
-				<div className="w-11/12 max-w-7xl mx-auto">
-					<div className="w-full flex flex-col space-y-4">
-						<h2 className="font-plex-sans font-semibold text-text-primary text-2xl">
-							What I do outside of work...
-						</h2>
-						<p className="font-plex-mono text-text-secondary">
-							Lorem, ipsum dolor sit amet consectetur adipisicing
-							elit. Architecto obcaecati necessitatibus, odit
-							porro corrupti placeat! Culpa natus inventore
-							adipisci. Facilis, voluptas! Inventore, illo? Libero
-							sint dolorum alias. Exercitationem, nobis velit?
-						</p>
-					</div>
-				</div>
-			</section> */}
 		</article>
 	);
 };

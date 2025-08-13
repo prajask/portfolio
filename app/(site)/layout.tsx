@@ -32,8 +32,7 @@ export default function RootLayout({
 				className={`${plexSans.variable} ${plexMono.variable} antialiased bg-background-primary scroll-smooth`}
 			>
 				<header
-					className="w-full
-					border-b border-b-border-primary"
+					className="w-full"
 				>
 					<Navbar />
 				</header>

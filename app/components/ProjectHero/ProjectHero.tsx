@@ -9,20 +9,20 @@ type ProjectHeroProps = {
 
 const ProjectHero = ({ project }: ProjectHeroProps) => {
 	return (
-		<section className="w-full py-20 border-b border-border-primary">
+		<section className="w-full py-20">
 			<div
 				className="w-11/12 max-w-7xl mx-auto
 					flex flex-col space-y-4"
 			>
-				<div className="flex flex-col space-y-2">
-					<h1 className="font-semibold font-plex-sans text-4xl">
+				<div className="flex flex-col space-y-4">
+					<h1 className="font-semibold font-plex-sans tracking-wide text-4xl">
 						{project.name}
 					</h1>
-					<h2 className="font-plex-mono text-2xl">
+					<h2 className="font-plex-mono font-medium tracking-wide text-2xl">
 						{project.description}
 					</h2>
 				</div>
-				<figure className="w-full aspect-video relative border-2 border-border-primary">
+				<figure className="w-full aspect-video relative ">
 					<Image
 						className="object-cover"
 						src={project.image}
@@ -30,9 +30,14 @@ const ProjectHero = ({ project }: ProjectHeroProps) => {
 						fill
 					/>
 				</figure>
-				<div className="p-4 w-full flex flex-col space-y-4 lg:flex-row justify-between bg-background-secondary border-2 border-project-primary">
+				<div className="p-4 w-full flex flex-col space-y-4 lg:flex-row justify-between border-[1.5px] border-border-secondary rounded-2xl">
 					<div className="flex flex-col space-y-2">
-						<h3 className="font-plex-sans font-medium text-lg">
+						<h3
+							className="font-plex-sans font-medium text-lg"
+							style={{
+								color: "var(--project-color)",
+							}}
+						>
 							Skills
 						</h3>
 						<ul className="font-plex-mono">
@@ -42,7 +47,12 @@ const ProjectHero = ({ project }: ProjectHeroProps) => {
 						</ul>
 					</div>
 					<div className="flex flex-col space-y-2">
-						<h3 className="font-plex-sans font-medium text-lg">
+						<h3
+							className="font-plex-sans font-medium text-lg"
+							style={{
+								color: "var(--project-color)",
+							}}
+						>
 							Tools
 						</h3>
 						<ul className="w-full flex flex-col font-plex-mono">
@@ -52,7 +62,12 @@ const ProjectHero = ({ project }: ProjectHeroProps) => {
 						</ul>
 					</div>
 					<div className="flex flex-col space-y-2">
-						<h3 className="font-plex-sans font-medium text-lg">
+						<h3
+							className="font-plex-sans font-medium text-lg"
+							style={{
+								color: "var(--project-color)",
+							}}
+						>
 							Team
 						</h3>
 						<ul className="font-plex-mono">
@@ -62,7 +77,12 @@ const ProjectHero = ({ project }: ProjectHeroProps) => {
 						</ul>
 					</div>
 					<div className="flex flex-col space-y-2">
-						<h3 className="font-plex-sans font-medium text-lg">
+						<h3
+							className="font-plex-sans font-medium text-lg"
+							style={{
+								color: "var(--project-color)",
+							}}
+						>
 							Duration
 						</h3>
 						<p className="font-plex-mono">{project.duration}</p>
@@ -78,10 +98,14 @@ const ProjectHero = ({ project }: ProjectHeroProps) => {
 									target="_blank"
 									rel="noopener noreferrer"
 									className="p-2 flex items-center justify-center space-x-2 bg-background-secondary text-text-primary font-medium font-plex-mono
-										border-2 border-border-primary
-										shadow-button
-										hover:shadow-button-hover
+										border-[1.5px] border-border-secondary
+										rounded-2xl
+										hover:scale-95
 										transition-all ease-out duration-300"
+										style={{
+											borderColor: "var(--project-color)",
+											backgroundColor: "var(--project-color-accent)"
+										}}
 								>
 									<DynamicIcon size="20" icon={link.icon} />
 									<span>{link.name}</span>

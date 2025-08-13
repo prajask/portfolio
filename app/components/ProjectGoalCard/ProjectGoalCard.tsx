@@ -7,9 +7,16 @@ type ProjectGoalCardProps = {
 
 const ProjectGoalCard = ({ goal }: ProjectGoalCardProps) => {
 	return (
-		<div className="p-4 w-full h-full flex flex-col space-y-4 bg-background-secondary border-2 border-border-primary shadow-project-card">
+		<div
+			className="p-4 w-full h-full flex flex-col space-y-4 rounded-2xl border-[1.5px] border-border-secondary"
+			style={{
+				backgroundColor: "var(--project-color-accent)",
+			}}
+		>
 			<DynamicIcon size="48" icon={goal.icon} />
-			<p className="font-plex-sans font-semibold text-lg text-text-primary">{goal.goal}</p>
+			<p className="font-plex-sans font-semibold text-lg text-text-primary">
+				{goal.goal}
+			</p>
 		</div>
 	);
 };

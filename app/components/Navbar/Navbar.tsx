@@ -18,13 +18,14 @@ const Navbar = async () => {
 					<Link href="/#work" className="transition-all duration-100 ease-linear hover:border-b border-border-primary">Work</Link>
 				</li>
 				<li>
-					<Link href="/about">About</Link>
+					<Link href="/about" className="transition-all duration-100 ease-linear hover:border-b border-border-primary">About</Link>
 				</li>
 				<li>
 					<Link
 						href={RESUME_LINK.url}
 						target="_blank"
 						rel="noreferrer noopener"
+						className="transition-all duration-100 ease-linear hover:border-b border-border-primary"
 					>
 						Resume
 					</Link>

@@ -6,7 +6,7 @@ const Work = async () => {
     const projects = await getProjects();
 	return (
 		<section
-			className="py-20 w-full border-b border-border-primary"
+			className="py-10 w-full"
 			id="work"
 		>
 			<div className="w-11/12 max-w-7xl mx-auto">
@@ -20,6 +20,7 @@ const Work = async () => {
 									style={
 										{
 											"--project-color": project.color,
+											"--project-color-accent": project.color + "14"
 										} as CSSProperties
 									}
 								>

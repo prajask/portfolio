@@ -14,7 +14,7 @@ const ImageContentComponent = ({ image }: ImageContentComponentProps) => {
 	return (
 		<figure className="w-full flex items-center justify-center relative">
 			<Image
-				className="border-2 border-border-primary bg-background-secondary"
+				className="w-full p-4 max-w-4xl border-[1.5px] border-border-secondary bg-background-secondary rounded-xl shadow-primary"
 				src={imageURL}
 				width={width}
 				height={height}

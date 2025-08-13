@@ -8,7 +8,7 @@ const Footer = async () => {
     const year = date.getFullYear();
 
 	return (
-		<footer className="w-full border-b border-border-primary">
+		<footer className="w-full border-y border-border-primary">
 			<div
 				className="py-4
 				w-11/12 max-w-7xl mx-auto
@@ -23,6 +23,7 @@ const Footer = async () => {
 						return (
 							!(link.name === "Resume") && <li key={link.name}>
 								<Link
+									className="hover:scale-105 transition-all duration-100 ease-in"
 									href={link.url}
 									target="_blank"
 									rel="noopener noreferrer"

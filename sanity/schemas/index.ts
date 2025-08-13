@@ -15,6 +15,7 @@ import insightReference from "./objects/insightReference-schema";
 import researchMethod from "./objects/researchMethod-schema";
 import projectGoal from "./objects/projectGoal-schema";
 import prototypeLink from "./objects/prototypeLink";
+import callout from "./objects/callout-schema";
 
 const documentSchemas = [project, socialLinks];
 const objectSchemas = [
@@ -33,6 +34,7 @@ const objectSchemas = [
 	insightReference,
 	projectGoal,
 	prototypeLink,
+	callout
 ];
 
 const schemas = [...documentSchemas, ...objectSchemas];

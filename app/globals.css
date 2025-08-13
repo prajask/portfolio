@@ -2,13 +2,14 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-	--background-primary: #f0f0f0;
-	--background-secondary: #e9e9e9;
+	--background-primary: #ffffff;
+	--background-secondary: #e9e9e910;
 	--text-primary: #1a1a1a;
-	--text-secondary: #222526;
+	--text-secondary: #222526cf;
 	--border-primary: #353a3e;
+	--border-secondary: rgba(0, 0, 0, 0.06);
 	--project-color: #222526;
-	--project-color-accent: #2225261a;
+	--project-color-accent: #2225260d;
 }
 
 @theme {
@@ -17,29 +18,13 @@
 	--color-text-primary: var(--text-primary);
 	--color-text-secondary: var(--text-secondary);
 	--color-border-primary: var(--border-primary);
+	--color-border-secondary: var(--border-secondary);
 
 	--font-plex-sans: var(--font-plex-sans);
 	--font-plex-mono: var(--font-plex-mono);
 
-	--shadow-project-card: 8px 8px 0 0 var(--project-color);
-	--shadow-project-card-hover: 2px 2px 0 0 var(--project-color);
+	--shadow-project-card: 2px 2px 8px 2px var(--project-color-accent);
+	--shadow-project-card-hover: 2px 2px 16px 2px var(--project-color-accent);
 
-	--shadow-button: 4px 4px 0 0 var(--project-color);
-	--shadow-button-hover: 0 0 0 0 var(--project-color);
-
-	--text-shadow-primary: 0px 4px 0px var(--project-color-accent);
-
-	--animate-hero: hero_rotate 30s linear infinite;
-
-	@keyframes hero_rotate {
-		0% {
-			transform: rotate(0deg);
-		}
-		50% {
-			transform: rotate(180deg);
-		}
-		100% {
-			transform: rotate(360deg);
-		}
-	}
+	--shadow-primary: 2px 0px 8px 4px #e9e9e97a;
 }

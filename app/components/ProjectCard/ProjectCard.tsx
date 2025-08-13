@@ -7,38 +7,38 @@ type ProjectCardProps = {
 	project: ProjectCardData;
 };
 
-const ProjectCard = ({project}: ProjectCardProps) => {
+const ProjectCard = ({ project }: ProjectCardProps) => {
 	return (
 		<Link
 			href={`/projects/${project.slug}`}
 			className="block w-full h-full
 			flex-col
-			bg-background-secondary
-			border-2 border-border-primary
-			hover:shadow-project-card-hover
-			group
-			shadow-project-card
-			transition-all ease-out duration-300"
+			rounded-2xl
+			border-[1.5px] border-border-secondary
+			hover:scale-102
+			transition-all ease-out duration-350"
 		>
-			<h2
-				className="p-4
-				border-b border-border-primary
-				font-plex-sans font-semibold
-				text-text-primary"
-			>
-				{project.description}
-			</h2>
 			<figure
-				className="w-full aspect-video relative
-				border-b border-border-primary"
+				className="w-full aspect-video relative"
 			>
 				<Image
-					className="object-cover"
+					className="object-cover rounded-t-2xl"
 					src={project.image}
 					alt=""
 					fill
 				/>
 			</figure>
+			<h2
+				className="p-4
+				
+				font-plex-sans font-semibold
+				text-lg tracking-wide text-text-primary"
+				style={{
+					backgroundColor: "var(--project-color-accent)",
+				}}
+			>
+				{project.description}
+			</h2>
 			<ul
 				className="w-full flex flex-wrap gap-2
 				p-4
