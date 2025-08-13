@@ -1,4 +1,3 @@
-import HeroLinks from "../components/HeroLinks/HeroLinks";
 import Work from "../components/Work/Work";
 
 export default function Home() {
@@ -12,7 +11,7 @@ export default function Home() {
 						<div className="w-full flex flex-col space-y-4 z-10">
 							<h2 className="font-plex-sans font-semibold text-text-primary text-4xl tracking-widest leading-14">
 								Building Human-Centered Interfaces <br /> from
-								inital concepts to implementation.
+								initial concepts to implementation.
 							</h2>
 						</div>
 						<HeroLinks />
