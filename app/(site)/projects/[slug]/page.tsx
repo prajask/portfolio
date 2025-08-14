@@ -1,5 +1,6 @@
 import ContentComponent from "@/app/components/ContentComponent/ContentComponent";
 import ProjectHero from "@/app/components/ProjectHero/ProjectHero";
+import UpNext from "@/app/components/UpNext/UpNext";
 import { getProjectContent } from "@/sanity/sanity-utils";
 import { CSSProperties } from "react";
 
@@ -100,6 +101,7 @@ const page = async (props: { params: Params }) => {
 						</section>
 					);
 				})}
+				<UpNext currentProjectOrder={projectContent.order}/>
 		</article>
 	);
 };

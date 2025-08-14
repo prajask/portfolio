@@ -1,5 +1,3 @@
-import HeroLinks from "@/app/components/HeroLinks/HeroLinks";
-import Image from "next/image";
 import { BiBriefcase, BiSolidGraduation } from "react-icons/bi";
 
 const WORK_EXPERIENCE = [
@@ -12,6 +10,11 @@ const WORK_EXPERIENCE = [
 		position: "UX Engineer",
 		company: "IBM",
 		duration: "Apr 2024 - Dec 2024",
+	},
+	{
+		position:"UX Intern - Research & Strategy",
+		company: "Mosi Audio",
+		duration: "Jul 2024 - Sep 2024"
 	},
 	{
 		position: "Software Development Consultant",
@@ -37,7 +40,7 @@ const page = () => {
 	return (
 		<article className="w-full">
 			<section className="w-full py-20">
-				<div className="w-11/12 max-w-7xl mx-auto flex space-x-12">
+				<div className="w-11/12 max-w-7xl mx-auto space-y-8">
 					<div className="w-full flex flex-col border-[1.5px] border-border-secondary rounded-2xl">
 						<h2 className="p-4 font-plex-mono font-medium uppercase border-b-1 border-border-secondary">
 							Experience

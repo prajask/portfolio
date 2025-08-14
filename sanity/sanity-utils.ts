@@ -29,6 +29,7 @@ export async function getProjectContent(slug: string): Promise<Project> {
 	return createClient(clientConfig).fetch(
 		groq`*[_type=="project" && slug.current==$slug][0]{
             _id,
+            order,
             name,
             description,
             tags,
@@ -64,4 +65,28 @@ export async function getResumeLink(): Promise<SocialLink> {
             url
         }`
 	);
+}
+
+export async function getUpNext(currentProject: number): Promise<ProjectCardData> {
+    const sanityClient = createClient(clientConfig);
+
+    const projectCount = await sanityClient.fetch(
+        groq`count(*[_type=="project"])`
+    );
+
+    const nextProject = (currentProject + 1 > projectCount) ? 1 : currentProject + 1;
+
+    return sanityClient.fetch(
+        groq`*[_type=="project" && order==$nextProject][0]{
+            _id,
+            order,
+            name,
+            description,
+            "slug": slug.current,
+            "image": coverImage.asset->url,
+            color,
+            tags
+        }`,
+        { nextProject }
+    );
 }

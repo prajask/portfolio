@@ -4,6 +4,7 @@ import { PrototypeLink } from "./PrototypeLink";
 
 export type Project = {
 	_id: string;
+	order: number;
 	name: string;
 	description: string;
 	tags: string[];
