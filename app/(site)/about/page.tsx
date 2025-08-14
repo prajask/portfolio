@@ -12,6 +12,11 @@ const WORK_EXPERIENCE = [
 		duration: "Apr 2024 - Dec 2024",
 	},
 	{
+		position:"UX Intern - Research & Strategy",
+		company: "Mosi Audio",
+		duration: "Jul 2024 - Sep 2024"
+	},
+	{
 		position: "Software Development Consultant",
 		company: "Capgemini",
 		duration: "Nov 2020 - Jul 2023",
@@ -35,7 +40,7 @@ const page = () => {
 	return (
 		<article className="w-full">
 			<section className="w-full py-20">
-				<div className="w-11/12 max-w-7xl mx-auto flex space-x-12">
+				<div className="w-11/12 max-w-7xl mx-auto space-y-8">
 					<div className="w-full flex flex-col border-[1.5px] border-border-secondary rounded-2xl">
 						<h2 className="p-4 font-plex-mono font-medium uppercase border-b-1 border-border-secondary">
 							Experience

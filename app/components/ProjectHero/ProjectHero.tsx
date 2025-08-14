@@ -103,7 +103,6 @@ const ProjectHero = ({ project }: ProjectHeroProps) => {
 										hover:scale-95
 										transition-all ease-out duration-300"
 										style={{
-											borderColor: "var(--project-color)",
 											backgroundColor: "var(--project-color-accent)"
 										}}
 								>
