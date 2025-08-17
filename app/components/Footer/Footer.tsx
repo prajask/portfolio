@@ -14,8 +14,8 @@ const Footer = async () => {
 				w-11/12 max-w-7xl mx-auto
             	flex flex-col space-y-8 lg:space-y-0 lg:flex-row lg:items-center lg:justify-between"
 			>
-				<h6 className="font-medium font-plex-mono">
-					<span className="text-xl">&#169;</span> Prajas Kadepurkar {year}
+				<h6 className="font-medium font-nunito">
+					<span className="text-xl pt-1">&#169;</span> Prajas Kadepurkar {year}
 				</h6>
 
 				<ul className="mb-4 lg:mb-0 flex items-center lg:justify-start space-x-8">

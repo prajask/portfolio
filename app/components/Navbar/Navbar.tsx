@@ -10,10 +10,10 @@ const Navbar = async () => {
             w-11/12 max-w-7xl mx-auto
             flex items-center justify-between"
 		>
-			<h1 className="font-plex-sans text-2xl font-semibold tracking-wider">
+			<h1 className="font-montserrat text-xl font-bold tracking-wider">
 				<Link href="/">Prajas K.</Link>
 			</h1>
-			<ul className="flex space-x-8 font-plex-mono text-lg text-text-secondary">
+			<ul className="flex space-x-8 font-nunito text-lg text-text-secondary">
 				<li>
 					<Link href="/#work" className="transition-all duration-100 ease-linear hover:border-b border-border-primary">Work</Link>
 				</li>

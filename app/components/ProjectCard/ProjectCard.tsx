@@ -31,8 +31,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 			<h2
 				className="p-4
 				
-				font-plex-sans font-semibold
-				text-lg tracking-wide text-text-primary"
+				font-montserrat font-semibold tracking-wide text-text-primary"
 				style={{
 					backgroundColor: "var(--project-color-accent)",
 				}}
@@ -42,7 +41,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 			<ul
 				className="w-full flex flex-wrap gap-2
 				p-4
-				font-plex-mono text-sm text-text-secondary"
+				font-nunito text-sm text-text-secondary"
 			>
 				{project.tags.map((tag, index, { length }) => {
 					return (

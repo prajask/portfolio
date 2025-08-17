@@ -21,7 +21,7 @@ const InsightReferences = ({ insightReferences }: InsightReferencesProps) => {
 							// }}
 						>
 							<DynamicIcon icon={insight.icon} size="20" />
-							<span className="font-plex-mono text-text-secondary">
+							<span className="font-nunito text-text-secondary">
 								{insight.tag}
 							</span>
 						</li>
