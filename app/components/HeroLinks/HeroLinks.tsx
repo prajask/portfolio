@@ -15,7 +15,7 @@ const HeroLinks = async () => {
 							href={link.url}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="flex items-center justify-center space-x-2 text-text-primary text-lg font-medium font-plex-mono hover:scale-105 transition-all duration-100 ease-in"
+							className="flex items-center justify-center space-x-2 text-text-primary text-lg font-medium font-nunito hover:scale-105 transition-all duration-100 ease-in"
 						>
 							<DynamicIcon size="20" icon={link.icon} />
 							<span

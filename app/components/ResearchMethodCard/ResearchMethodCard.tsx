@@ -23,12 +23,12 @@ const ResearchMethodCard = ({ researchMethod }: ResearchMethodCardProps) => {
 			<div className="px-4 py-2 w-full flex items-center space-x-4 font-plex-mono">
 				<div className="flex items-center space-x-2">
 					<DynamicIcon icon={researchMethod.method.icon} size="20" />
-					<p className="font-plex-mono text-text-secondary">
+					<p className="font-montserrat text-text-secondary">
 						{researchMethod.method.method}
 					</p>
 				</div>
 
-				<span className="font-plex-mono text-text-secondary">
+				<span className="font-montserrat text-text-secondary">
 					{"//"}
 				</span>
 
@@ -37,14 +37,14 @@ const ResearchMethodCard = ({ researchMethod }: ResearchMethodCardProps) => {
 						icon={researchMethod.resources.icon}
 						size="20"
 					/>
-					<p className="font-plex-mono text-text-secondary">
+					<p className="font-montserrat text-text-secondary">
 						{researchMethod.resources.resources}
 					</p>
 				</div>
 			</div>
 			{researchMethod.keyInsights && (
 				<div className="w-full flex flex-col divide-y divide-border-secondary">
-					<p className="p-4 w-full font-plex-sans font-medium tracking-wider text-text-primary">
+					<p className="p-4 w-full font-montserrat font-medium tracking-wider text-text-primary">
 						Key Insights
 					</p>
 					<div className="w-full flex flex-col-reverse lg:flex-row divide-y lg:divide-y-0 lg:divide-x divide-border-secondary">
@@ -79,15 +79,15 @@ const ResearchMethodCard = ({ researchMethod }: ResearchMethodCardProps) => {
 														icon={keyInsight.icon}
 														size="28"
 													/>
-													<p className="font-plex-sans font-medium text-lg text-text-primary">
+													<p className="font-montserrat font-medium text-lg text-text-primary">
 														{keyInsight.title}
 													</p>
 												</div>
-												<p className="font-plex-mono text-text-secondary">
+												<p className="font-nunito text-text-secondary">
 													{keyInsight.body}
 												</p>
 												{keyInsight.cite && (
-													<p className="font-plex-sans text-sm text-text-secondary">
+													<p className="font-nunito text-sm text-text-secondary">
 														-{keyInsight.cite}
 													</p>
 												)}
@@ -100,7 +100,7 @@ const ResearchMethodCard = ({ researchMethod }: ResearchMethodCardProps) => {
 				</div>
 			)}
 			<div className="w-full p-4">
-				<p className="font-plex-sans tracking-wider text-text-secondary text-sm">
+				<p className="font-nunito tracking-wider text-text-secondary text-sm">
 					{researchMethod.goal}
 				</p>
 			</div>

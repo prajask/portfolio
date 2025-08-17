@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
+import { Montserrat, Nunito } from "next/font/google";
 import "../globals.css";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 
-const plexSans = IBM_Plex_Sans({
-	variable: "--font-plex-sans",
+const montserrat = Montserrat({
+	variable: "--font-montserrat",
 	subsets: ["latin"],
-	weight: ["100", "200", "300", "400", "500", "600", "700"],
+	weight: ["200", "300", "400", "500", "600", "700"]
 });
 
-const plexMono = IBM_Plex_Mono({
-	variable: "--font-plex-mono",
+const nunito = Nunito({
+	variable: "--font-nunito",
 	subsets: ["latin"],
-	weight: ["100", "200", "300", "400", "500", "600", "700"],
+	weight: ["200", "300", "400", "500", "600", "700"]
 });
 
 export const metadata: Metadata = {
@@ -29,7 +29,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${plexSans.variable} ${plexMono.variable} antialiased bg-background-primary scroll-smooth`}
+				className={`${montserrat.variable} ${nunito.variable} antialiased bg-background-primary scroll-smooth`}
 			>
 				<header
 					className="w-full"

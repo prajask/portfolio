@@ -27,17 +27,17 @@ const page = async (props: { params: Params }) => {
 					return (
 						<section
 							key={index}
-							className="w-full py-20"
+							className="w-full py-16"
 						>
 							<div className="w-11/12 max-w-7xl mx-auto">
-								<h2 className="mb-4 font-plex-mono font-semibold tracking-wide text-xl text-text-secondary"
+								<h2 className="mb-2 font-nunito font-bold tracking-wide text-xl text-text-secondary"
 									style={{
 										color: "var(--project-color)"
 									}}
 								>
 									{section.heading}
 								</h2>
-								<h3 className="w-full mb-6 font-plex-sans font-semibold tracking-wide text-2xl text-text-primary">
+								<h3 className="w-full mb-5 font-montserrat font-semibold tracking-wide text-2xl text-text-primary">
 									{section.subHeading}
 								</h3>
 								<div className="w-full flex flex-col space-y-12">
@@ -53,7 +53,7 @@ const page = async (props: { params: Params }) => {
 															return (
 																<div
 																	key={index}
-																	className="w-full flex flex-col space-y-10 lg:space-y-0 lg:flex-row lg:space-x-10"
+																	className="w-full flex flex-col space-y-6 lg:space-y-0 lg:flex-row lg:space-x-6"
 																>
 																	{row.columns.map(
 																		(

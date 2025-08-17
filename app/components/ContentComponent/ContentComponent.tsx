@@ -19,12 +19,12 @@ const ContentComponent = ({ content }: ContentComponentProps) => {
 				<div
 					className="max-w-none h-full
 				prose
-				prose-p:font-plex-sans prose-p:text-lg/relaxed prose-p:text-text-secondary
-				prose-h4:mb-0 prose-h4:font-plex-sans prose-h4:font-medium prose-h4:text-xl prose-h4:text-text-primary
-				prose-h5:font-plex-mono prose-h5:tracking-wider prose-h5:uppercase prose-h5:text-text-secondary
-				prose-h6:font-plex-sans prose-h6:font-medium prose-h6:text-lg prose-h6:text-text-primary
-				prose-ul:font-plex-sans prose-ul:text-text-secondary prose-ul:text-lg
-				prose-ol:font-plex-sans prose-ol:text-text-secondary prose-ol:text-lg"
+				prose-p:font-nunito prose-p:text-lg/relaxed prose-p:text-text-secondary
+				prose-h4:mb-0 prose-h4:font-nunito prose-h4:font-medium prose-h4:text-xl prose-h4:text-text-primary
+				prose-h5:font-nunito prose-h5:tracking-wider prose-h5:uppercase prose-h5:text-text-secondary
+				prose-h6:font-nunito prose-h6:font-medium prose-h6:text-lg prose-h6:text-text-primary
+				prose-ul:font-nunito prose-ul:text-text-secondary prose-ul:text-lg
+				prose-ol:font-nunito prose-ol:text-text-secondary prose-ol:text-lg"
 				>
 					<PortableText value={content.richTextContent} />
 				</div>

@@ -13,7 +13,7 @@ const QuoteCard = ({ quote }: QuoteCardProps) => {
 			}}
 		>
 			<RiDoubleQuotesL size={32} />
-			<q className="font-plex-mono text-text-secondary">{quote.quote}</q>
+			<q className="font-nunito text-text-secondary">{quote.quote}</q>
 		</div>
 	);
 };

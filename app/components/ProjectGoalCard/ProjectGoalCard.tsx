@@ -14,7 +14,7 @@ const ProjectGoalCard = ({ goal }: ProjectGoalCardProps) => {
 			}}
 		>
 			<DynamicIcon size="48" icon={goal.icon} />
-			<p className="font-plex-sans font-semibold text-lg text-text-primary">
+			<p className="font-montserrat font-semibold text-lg text-text-primary">
 				{goal.goal}
 			</p>
 		</div>

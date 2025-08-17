@@ -24,15 +24,15 @@ const TargetUserCard = ({ targetUser }: TargetUserCardProps) => {
 					/>
 				</figure>
 				<div className="w-full self-stretch flex flex-col justify-end space-y-1">
-					<p className="font-plex-sans font-medium text-text-primary">
+					<p className="font-montserrat font-medium text-text-primary">
 						{targetUser.name}
 					</p>
-					<p className="font-plex-sans font-medium text-xl text-text-primary">
+					<p className="font-montserrat font-medium text-lg text-text-primary">
 						{targetUser.background}
 					</p>
 				</div>
 			</div>
-			<q className="font-plex-mono text-text-secondary">
+			<q className="font-nunito text-text-secondary text-lg">
 				{targetUser.quote}
 			</q>
 		</div>

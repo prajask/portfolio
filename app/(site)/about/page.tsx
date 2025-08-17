@@ -12,9 +12,9 @@ const WORK_EXPERIENCE = [
 		duration: "Apr 2024 - Dec 2024",
 	},
 	{
-		position:"UX Intern - Research & Strategy",
+		position: "UX Intern - Research & Strategy",
 		company: "Mosi Audio",
-		duration: "Jul 2024 - Sep 2024"
+		duration: "Jul 2024 - Sep 2024",
 	},
 	{
 		position: "Software Development Consultant",
@@ -42,7 +42,7 @@ const page = () => {
 			<section className="w-full py-20">
 				<div className="w-11/12 max-w-7xl mx-auto space-y-8">
 					<div className="w-full flex flex-col border-[1.5px] border-border-secondary rounded-2xl">
-						<h2 className="p-4 font-plex-mono font-medium uppercase border-b-1 border-border-secondary">
+						<h2 className="p-4 font-montserrat font-semibold text-lg tracking-wide border-b-1 border-border-secondary">
 							Experience
 						</h2>
 						<ul className="list-none">
@@ -59,13 +59,15 @@ const page = () => {
 													className="shrink-0 p-1 mt-1 border-[1.5px] border-border-secondary rounded-xl"
 												/>
 												<div className="w-full flex flex-col">
-													<h3 className="font-plex-sans font-medium">
+													<h3 className="font-nunito font-semibold text-text-primary">
 														{experience.position}
 													</h3>
-													<h4>
+													<h4 className="font-nunito text-text-secondary">
 														{experience.company}
 													</h4>
-													<p>{experience.duration}</p>
+													<p className="font-nunito text-text-secondary">
+														{experience.duration}
+													</p>
 												</div>
 											</div>
 										</li>
@@ -76,11 +78,11 @@ const page = () => {
 					</div>
 
 					<div className="w-full flex flex-col border-[1.5px] border-border-secondary rounded-2xl">
-						<h2 className="p-4 font-plex-mono font-medium uppercase border-b-[1.5px] border-border-secondary">
+						<h2 className="p-4 font-montserrat font-semibold text-lg tracking-wide border-b-1 border-border-secondary">
 							Education
 						</h2>
 						<ul className="list-none">
-							{EDUCATION.map((education, index, {length}) => {
+							{EDUCATION.map((education, index, { length }) => {
 								return (
 									<li
 										key={education.duration}
@@ -92,11 +94,15 @@ const page = () => {
 												className="shrink-0 p-1 mt-1 border-[1.5px] border-border-secondary rounded-xl"
 											/>
 											<div className="w-full flex flex-col">
-												<h3 className="font-plex-sans font-medium">
+												<h3 className="font-nunito font-semibold text-text-primary">
 													{education.school}
 												</h3>
-												<h4>{education.degree}</h4>
-												<p>{education.duration}</p>
+												<h4 className="font-nunito text-text-secondary">
+													{education.degree}
+												</h4>
+												<p className="font-nunito text-text-secondary">
+													{education.duration}
+												</p>
 											</div>
 										</div>
 									</li>
