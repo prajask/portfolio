@@ -39,7 +39,7 @@ const EDUCATION = [
 const page = () => {
 	return (
 		<article className="w-full">
-			<section className="w-full py-20">
+			<section className="w-full py-16">
 				<div className="w-11/12 max-w-7xl mx-auto space-y-8">
 					<div className="w-full flex flex-col border-[1.5px] border-border-secondary rounded-2xl">
 						<h2 className="p-4 font-montserrat font-semibold text-lg tracking-wide border-b-1 border-border-secondary">

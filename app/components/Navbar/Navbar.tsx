@@ -6,7 +6,7 @@ const Navbar = async () => {
 
 	return (
 		<nav
-			className="pt-8
+			className="py-4
             w-11/12 max-w-7xl mx-auto
             flex items-center justify-between"
 		>
