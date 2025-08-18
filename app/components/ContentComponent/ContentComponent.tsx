@@ -19,7 +19,7 @@ const ContentComponent = ({ content }: ContentComponentProps) => {
 				<div
 					className="max-w-none h-full
 				prose
-				prose-p:font-nunito prose-p:text-lg/relaxed prose-p:text-text-secondary
+				prose-p:m-0 prose-p:font-nunito prose-p:text-lg/relaxed prose-p:text-text-secondary
 				prose-h4:mb-0 prose-h4:font-nunito prose-h4:font-medium prose-h4:text-xl prose-h4:text-text-primary
 				prose-h5:font-nunito prose-h5:tracking-wider prose-h5:uppercase prose-h5:text-text-secondary
 				prose-h6:font-nunito prose-h6:font-medium prose-h6:text-lg prose-h6:text-text-primary

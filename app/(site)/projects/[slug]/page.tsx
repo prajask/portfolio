@@ -37,7 +37,7 @@ const page = async (props: { params: Params }) => {
 								>
 									{section.heading}
 								</h2>
-								<h3 className="w-full mb-5 font-montserrat font-semibold tracking-wide text-2xl text-text-primary">
+								<h3 className="w-full mb-5 font-montserrat font-semibold tracking-wide text-xl text-text-primary">
 									{section.subHeading}
 								</h3>
 								<div className="w-full flex flex-col space-y-12">

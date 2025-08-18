@@ -6,7 +6,7 @@ const Work = async () => {
     const projects = await getProjects();
 	return (
 		<section
-			className="py-10 w-full"
+			className="py-20 w-full"
 			id="work"
 		>
 			<div className="w-11/12 max-w-7xl mx-auto">
