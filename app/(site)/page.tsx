@@ -1,5 +1,3 @@
-import Link from "next/link";
-import HeroLinks from "../components/HeroLinks/HeroLinks";
 import Work from "../components/Work/Work";
 
 export default function Home() {
