@@ -10,6 +10,7 @@
 	--border-secondary: rgba(0, 0, 0, 0.1);
 	--project-color: #222526;
 	--project-color-accent: #2225260d;
+	--project-background-accent:#e9e9e91f; 
 }
 
 @theme {
@@ -19,6 +20,7 @@
 	--color-text-secondary: var(--text-secondary);
 	--color-border-primary: var(--border-primary);
 	--color-border-secondary: var(--border-secondary);
+	--color-project-background-accent: var(--project-background-accent);
 
 	--font-montserrat: var(--font-montserrat);
 	--font-nunito: var(--font-nunito);

@@ -47,7 +47,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 					return (
 						<>
 							<li>{tag}</li>
-							{index != length - 1 && <span>{"//"}</span>}
+							{index != length - 1 && <span>{"/ /"}</span>}
 						</>
 					);
 				})}

@@ -27,7 +27,7 @@ const page = async (props: { params: Params }) => {
 					return (
 						<section
 							key={index}
-							className="w-full py-16"
+							className={`w-full py-16 bg-project-background-accent`}
 						>
 							<div className="w-11/12 max-w-7xl mx-auto">
 								<h2 className="mb-2 font-nunito font-bold tracking-wide text-xl text-text-secondary"
@@ -40,13 +40,13 @@ const page = async (props: { params: Params }) => {
 								<h3 className="w-full mb-5 font-montserrat font-semibold tracking-wide text-xl text-text-primary">
 									{section.subHeading}
 								</h3>
-								<div className="w-full flex flex-col space-y-12">
+								<div className="w-full flex flex-col space-y-16">
 									{section.subSections.map(
 										(subSection, index) => {
 											return (
 												<div
 													key={index}
-													className="w-full flex flex-col space-y-6"
+													className="w-full flex flex-col space-y-10"
 												>
 													{subSection.projectRows.map(
 														(row, index) => {
