@@ -27,9 +27,9 @@ const page = async (props: { params: Params }) => {
 					return (
 						<section
 							key={index}
-							className={`w-full py-16 bg-project-background-accent`}
+							className={`w-full py-12 bg-project-background-accent`}
 						>
-							<div className="w-11/12 max-w-7xl mx-auto">
+							<div className="w-11/12 xl:w-4/5 max-w-7xl mx-auto">
 								<h2 className="mb-2 font-nunito font-bold tracking-wide text-xl text-text-secondary"
 									style={{
 										color: "var(--project-color)"
@@ -37,16 +37,16 @@ const page = async (props: { params: Params }) => {
 								>
 									{section.heading}
 								</h2>
-								<h3 className="w-full mb-5 font-montserrat font-semibold tracking-wide text-xl text-text-primary">
+								<h3 className="w-full mb-6 font-montserrat font-semibold tracking-wide text-xl text-text-primary">
 									{section.subHeading}
 								</h3>
-								<div className="w-full flex flex-col space-y-16">
+								<div className="w-full flex flex-col space-y-12">
 									{section.subSections.map(
 										(subSection, index) => {
 											return (
 												<div
 													key={index}
-													className="w-full flex flex-col space-y-10"
+													className="w-full flex flex-col space-y-8"
 												>
 													{subSection.projectRows.map(
 														(row, index) => {

@@ -7,6 +7,7 @@ import { KeyInsight } from "./KeyInsight";
 import { InsightReference } from "./InsightReference";
 import { ResearchMethod } from "./ResearchMethod";
 import { ProjectGoal } from "./ProjectGoal";
+import { Callout } from "./Callout";
 
 export type ContentComponentSchema = {
 	type: string;
@@ -19,4 +20,5 @@ export type ContentComponentSchema = {
 	keyInsight: KeyInsight;
 	insightReference: InsightReference;
 	projectGoal: ProjectGoal;
+	callout: Callout;
 };
