@@ -51,7 +51,7 @@ const page = () => {
 									return (
 										<li
 											key={experience.duration}
-											className={`w-full ${index === length - 1 ? "border-b-0" : "border-b-[1.5px]"} border-border-secondary bg-background-secondary`}
+											className={`w-full ${index === length - 1 ? "border-b-0 rounded-b-2xl" : "border-b-[1.5px] rounded-b-0"} border-border-secondary bg-background-secondary`}
 										>
 											<div className="p-4 flex items-start space-x-4">
 												<BiBriefcase
@@ -86,7 +86,7 @@ const page = () => {
 								return (
 									<li
 										key={education.duration}
-										className={`w-full ${index === length - 1 ? "border-b-0" : "border-b-[1.5px]"} border-border-secondary bg-background-secondary`}
+										className={`w-full ${index === length - 1 ? "border-b-0 rounded-b-2xl" : "border-b-[1.5px] rounded-b-0"} border-border-secondary bg-background-secondary`}
 									>
 										<div className="p-4 flex items-start space-x-4">
 											<BiSolidGraduation

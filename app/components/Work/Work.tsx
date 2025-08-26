@@ -20,7 +20,8 @@ const Work = async () => {
 									style={
 										{
 											"--project-color": project.color,
-											"--project-color-accent": project.color + "14"
+											"--project-color-accent": project.color + "14",
+											"--project-color-border": project.color + "4a"
 										} as CSSProperties
 									}
 								>
