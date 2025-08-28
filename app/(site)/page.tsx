@@ -4,15 +4,14 @@ import Work from "../components/Work/Work";
 export default function Home() {
 	return (
 		<>
-			<section className="py-20 w-full bg-gradient-to-br from-highlight-primary-accent via-background-primary to-highlight-secondary-accent">
+			<section className="py-12 lg:py-24 w-full bg-gradient-to-br from-highlight-primary-accent via-background-primary to-highlight-secondary-accent bg-size-[200%_200%] animate-gradient">
 				<div className=" relative w-11/12 max-w-7xl mx-auto">
 					<div className="w-full flex flex-col items-start space-y-8">
 						<div className="w-full flex flex-col space-y-4 z-10">
-							{/* <h2 className="font-montserrat font-bold text-4xl tracking-wider leading-16 bg-gradient-to-r from-highlight-primary via-highlight-secondary to-highlight-primary text-transparent bg-clip-text animate-text-gradient bg-[length:200%]"> */}
-								<h2 className="font-montserrat font-bold text-4xl tracking-wider leading-16 text-text-primary">
+							<h2 className="font-montserrat font-bold text-4xl tracking-wider leading-16 text-text-primary">
 								Systems-driven UX Designer & Engineer
 							</h2>
-							<h3 className="font-montserrat font-medium text-text-primary text-xl tracking-wide leading-12">
+							<h3 className="w-full font-montserrat font-medium text-text-primary text-xl tracking-wide leading-12">
 								Drawing on a background in &nbsp;
 								<span className="inline-flex items-center space-x-2 bg-highlight-secondary-accent leading-6">
 									&nbsp;
@@ -27,19 +26,22 @@ export default function Home() {
 									&nbsp;
 								</span>
 								<br />I have growing experience across&nbsp;
-								<span className="font-semibold bg-gradient-to-r from-highlight-primary to-highlight-secondary text-transparent bg-clip-text">
-									User Research&nbsp;&middot;&nbsp;
+								<span className="inline font-semibold">
+									User Research
 								</span>
-								<span className="font-semibold bg-gradient-to-r from-highlight-primary to-highlight-secondary text-transparent bg-clip-text">
-									Experience Design&nbsp;&middot;&nbsp;
+								&nbsp;&middot;&nbsp;
+								<span className="inline font-semibold">
+									Experience Design
 								</span>
-								<span className="font-semibold bg-gradient-to-r from-highlight-primary to-highlight-secondary text-transparent bg-clip-text">
-									Coded Prototyping&nbsp;&middot;&nbsp;
+								&nbsp;&middot;&nbsp;
+								<span className="inline font-semibold">
+									Coded Prototyping
 								</span>
-								<span className="font-semibold bg-gradient-to-r from-highlight-primary to-highlight-secondary text-transparent bg-clip-text">
+								&nbsp;&middot;&nbsp;
+								<span className="inline font-semibold">
 									Product Strategy
 								</span>
-								&nbsp;contributing to user-centered experiences
+								<br /> Contributing to User-Centered Experiences
 								in diverse and complex domains.
 							</h3>
 						</div>
