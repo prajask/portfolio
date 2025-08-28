@@ -1,4 +1,4 @@
-import { BiBriefcase, BiSolidGraduation } from "react-icons/bi";
+import { FiBookOpen, FiBriefcase } from "react-icons/fi";
 
 const WORK_EXPERIENCE = [
 	{
@@ -41,8 +41,8 @@ const page = () => {
 		<article className="w-full">
 			<section className="w-full py-16">
 				<div className="w-11/12 max-w-7xl mx-auto space-y-8">
-					<div className="w-full flex flex-col border-[1.5px] border-border-secondary rounded-2xl">
-						<h2 className="p-4 font-montserrat font-semibold text-lg tracking-wide border-b-1 border-border-secondary">
+					<div className="w-full flex flex-col border-[1.5px] border-highlight-primary-accent rounded-2xl">
+						<h2 className="p-4 font-montserrat font-semibold text-lg text-highlight-primary tracking-wide border-b-[1.5px] border-highlight-primary-accent">
 							Experience
 						</h2>
 						<ul className="list-none">
@@ -51,12 +51,12 @@ const page = () => {
 									return (
 										<li
 											key={experience.duration}
-											className={`w-full ${index === length - 1 ? "border-b-0 rounded-b-2xl" : "border-b-[1.5px] rounded-b-0"} border-border-secondary bg-background-secondary`}
+											className={`w-full ${index === length - 1 ? "border-b-0 rounded-b-2xl" : "border-b-[1.5px] rounded-b-0"} border-highlight-primary-accent`}
 										>
-											<div className="p-4 flex items-start space-x-4">
-												<BiBriefcase
-													size={40}
-													className="shrink-0 p-1 mt-1 border-[1.5px] border-border-secondary rounded-xl"
+											<div className="p-4 flex items-center space-x-4">
+												<FiBriefcase
+													size={24}
+													className="shrink-0"
 												/>
 												<div className="w-full flex flex-col">
 													<h3 className="font-nunito font-semibold text-text-primary">
@@ -77,8 +77,8 @@ const page = () => {
 						</ul>
 					</div>
 
-					<div className="w-full flex flex-col border-[1.5px] border-border-secondary rounded-2xl">
-						<h2 className="p-4 font-montserrat font-semibold text-lg tracking-wide border-b-1 border-border-secondary">
+					<div className="w-full flex flex-col border-[1.5px] border-highlight-secondary-accent rounded-2xl">
+						<h2 className="p-4 font-montserrat font-semibold text-lg text-highlight-secondary tracking-wide border-b-1 border-highlight-secondary-accent">
 							Education
 						</h2>
 						<ul className="list-none">
@@ -86,12 +86,12 @@ const page = () => {
 								return (
 									<li
 										key={education.duration}
-										className={`w-full ${index === length - 1 ? "border-b-0 rounded-b-2xl" : "border-b-[1.5px] rounded-b-0"} border-border-secondary bg-background-secondary`}
+										className={`w-full ${index === length - 1 ? "border-b-0 rounded-b-2xl" : "border-b-[1.5px] rounded-b-0"} border-highlight-secondary-accent`}
 									>
-										<div className="p-4 flex items-start space-x-4">
-											<BiSolidGraduation
-												size={40}
-												className="shrink-0 p-1 mt-1 border-[1.5px] border-border-secondary rounded-xl"
+										<div className="p-4 flex items-center space-x-4">
+											<FiBookOpen
+												size={24}
+												className="shrink-0"
 											/>
 											<div className="w-full flex flex-col">
 												<h3 className="font-nunito font-semibold text-text-primary">

@@ -8,7 +8,7 @@ const Footer = async () => {
     const year = date.getFullYear();
 
 	return (
-		<footer className="w-full border-y border-border-primary">
+		<footer className="w-full">
 			<div
 				className="py-4
 				w-11/12 max-w-7xl mx-auto
