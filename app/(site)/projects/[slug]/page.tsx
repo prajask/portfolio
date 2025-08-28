@@ -17,7 +17,8 @@ const page = async (props: { params: Params }) => {
 			style={
 				{
 					"--project-color": projectContent.color,
-					"--project-color-accent": projectContent.color + "1e",
+					"--project-color-accent": projectContent.color + "14",
+					"--project-color-border": projectContent.color + "4a",
 				} as CSSProperties
 			}
 		>
@@ -27,17 +28,18 @@ const page = async (props: { params: Params }) => {
 					return (
 						<section
 							key={index}
-							className="w-full py-16"
+							className={`w-full py-12 bg-project-background-accent`}
 						>
-							<div className="w-11/12 max-w-7xl mx-auto">
-								<h2 className="mb-2 font-nunito font-bold tracking-wide text-xl text-text-secondary"
+							<div className="w-11/12 xl:w-4/5 max-w-7xl mx-auto">
+								<h2
+									className="mb-2 font-nunito font-bold tracking-wide text-xl text-text-secondary"
 									style={{
-										color: "var(--project-color)"
+										color: "var(--project-color)",
 									}}
 								>
 									{section.heading}
 								</h2>
-								<h3 className="w-full mb-5 font-montserrat font-semibold tracking-wide text-xl text-text-primary">
+								<h3 className="w-full mb-6 font-montserrat font-semibold tracking-wide text-xl text-text-primary">
 									{section.subHeading}
 								</h3>
 								<div className="w-full flex flex-col space-y-12">
@@ -46,7 +48,7 @@ const page = async (props: { params: Params }) => {
 											return (
 												<div
 													key={index}
-													className="w-full flex flex-col space-y-6"
+													className="w-full flex flex-col space-y-8"
 												>
 													{subSection.projectRows.map(
 														(row, index) => {
@@ -101,7 +103,7 @@ const page = async (props: { params: Params }) => {
 						</section>
 					);
 				})}
-				<UpNext currentProjectOrder={projectContent.order}/>
+			<UpNext currentProjectOrder={projectContent.order} />
 		</article>
 	);
 };

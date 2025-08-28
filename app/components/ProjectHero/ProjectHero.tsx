@@ -9,20 +9,12 @@ type ProjectHeroProps = {
 
 const ProjectHero = ({ project }: ProjectHeroProps) => {
 	return (
-		<section className="w-full py-16">
+		<section className="w-full py-12">
 			<div
 				className="w-11/12 max-w-7xl mx-auto
 					flex flex-col space-y-4"
 			>
-				<div className="flex flex-col space-y-4">
-					<h1 className="font-semibold font-montserrat tracking-wide text-4xl text-text-primary">
-						{project.name}
-					</h1>
-					<h2 className="font-nunito font-semibold tracking-wide text-2xl text-text-secondary">
-						{project.description}
-					</h2>
-				</div>
-				<figure className="w-full max-w-5xl mx-auto flex items-center justify-center aspect-video relative">
+				<figure className="w-full max-w-6xl mx-auto flex items-center justify-center aspect-video relative">
 					<Image
 						className="w-full object-cover"
 						src={project.image}
@@ -30,7 +22,15 @@ const ProjectHero = ({ project }: ProjectHeroProps) => {
 						fill
 					/>
 				</figure>
-				<div className="p-4 w-full mt-8 flex flex-col space-y-4 lg:flex-row justify-between border-[1.5px] border-border-secondary rounded-2xl">
+				<div className="pt-4 pb-8 flex flex-col space-y-4">
+					<h1 className="font-semibold font-montserrat tracking-wide text-4xl text-text-primary">
+						{project.name}
+					</h1>
+					<h2 className="font-nunito font-semibold tracking-wide text-2xl text-text-secondary">
+						{project.description}
+					</h2>
+				</div>
+				<div className="p-4 w-full flex flex-col space-y-4 lg:flex-row justify-between border-[1.5px] border-border-secondary rounded-2xl">
 					<div className="flex flex-col space-y-2">
 						<h3
 							className="font-montserrat font-semibold text-lg"

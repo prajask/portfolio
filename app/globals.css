@@ -2,14 +2,20 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-	--background-primary: #ffffff;
-	--background-secondary: #e9e9e910;
-	--text-primary: #1a1a1a;
-	--text-secondary: #222526ef;
-	--border-primary: #353a3e;
-	--border-secondary: rgba(0, 0, 0, 0.1);
+	--background-primary: #FCFCFF;
+	--background-secondary: #F5F5F7;
+	--text-primary: #262626;
+	--text-secondary: #4D4D4D;
+	--border-primary: #BFBFC6;
+	--border-secondary: #D9D9DF;
 	--project-color: #222526;
 	--project-color-accent: #2225260d;
+	--project-color-border: #2225261f
+	--project-background-accent: #e9e9e91f;
+	--highlight-primary: #0081AF;
+	--highlight-primary-accent: #0081AF1a;
+	--highlight-secondary: #E88873;
+	--highlight-secondary-accent: #E888731a;
 }
 
 @theme {
@@ -19,6 +25,11 @@
 	--color-text-secondary: var(--text-secondary);
 	--color-border-primary: var(--border-primary);
 	--color-border-secondary: var(--border-secondary);
+	--color-project-background-accent: var(--project-background-accent);
+	--color-highlight-primary: var(--highlight-primary);
+	--color-highlight-primary-accent: var(--highlight-primary-accent);
+	--color-highlight-secondary: var(--highlight-secondary);
+	--color-highlight-secondary-accent: var(--highlight-secondary-accent);
 
 	--font-montserrat: var(--font-montserrat);
 	--font-nunito: var(--font-nunito);
@@ -27,4 +38,18 @@
 	--shadow-project-card-hover: 2px 2px 16px 2px var(--project-color-accent);
 
 	--shadow-primary: 2px 0px 8px 4px #e9e9e97a;
+
+	--animate-text-gradient: text-gradient 5s linear infinite reverse;
+
+	@keyframes text-gradient {
+		0% {
+			background-position: 0% 0%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 200% 0%;
+		}
+	}
 }

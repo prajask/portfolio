@@ -49,6 +49,10 @@ const contentComponent = {
 						title: "Project Goal",
 						value: "project_goal",
 					},
+					{
+						title: "Callout",
+						value: "callout"
+					}
 				],
 			},
 		},
@@ -113,6 +117,12 @@ const contentComponent = {
 			title: "Project Goal",
 			type: "projectGoal",
 			hidden: (options: { parent: { type?: string } | undefined }) => options.parent?.type != "project_goal",
+		},
+		{
+			name: "callout",
+			title: "Callout",
+			type: "callout",
+			hidden: (options: { parent: { type?: string } | undefined }) => options.parent?.type != "callout",
 		},
 	],
 };

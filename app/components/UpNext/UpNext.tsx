@@ -11,7 +11,7 @@ const UpNext = async ({ currentProjectOrder }: UpNextProps) => {
 
 	return (
 		<section
-			className="w-full py-20 border-t border-border-primary"
+			className="w-full py-20"
 			style={
 				{
 					"--project-color-accent": nextProject.color + "1e",

@@ -13,25 +13,24 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 			href={`/projects/${project.slug}`}
 			className="block w-full h-full
 			flex-col
-			rounded-2xl
-			border-[1.5px] border-border-secondary
+			rounded-xl
+			border-2 border-border-secondary
 			hover:scale-102
 			transition-all ease-out duration-350"
+			style={{
+					borderColor: "var(--project-color-border)",
+				}}
 		>
-			<figure
-				className="w-full aspect-video relative"
-			>
+			<figure className="w-full aspect-video relative">
 				<Image
-					className="object-cover rounded-t-2xl"
+					className="object-cover rounded-t-xl"
 					src={project.image}
 					alt=""
 					fill
 				/>
 			</figure>
 			<h2
-				className="p-4
-				
-				font-montserrat font-semibold tracking-wide text-text-primary"
+				className="p-4 mt-4 font-montserrat font-semibold tracking-wide text-text-primary"
 				style={{
 					backgroundColor: "var(--project-color-accent)",
 				}}
@@ -47,7 +46,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 					return (
 						<>
 							<li>{tag}</li>
-							{index != length - 1 && <span>{"//"}</span>}
+							{index != length - 1 && (
+								<span>&nbsp;&middot;&nbsp;</span>
+							)}
 						</>
 					);
 				})}
