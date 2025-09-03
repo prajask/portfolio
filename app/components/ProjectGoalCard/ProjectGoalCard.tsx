@@ -11,6 +11,7 @@ const ProjectGoalCard = ({ goal }: ProjectGoalCardProps) => {
 			className="p-4 w-full h-full flex flex-col space-y-4 rounded-2xl border-[1.5px] border-border-secondary"
 			style={{
 				backgroundColor: "var(--project-color-accent)",
+				borderColor: "var(--project-color-border)",
 			}}
 		>
 			<DynamicIcon size="48" icon={goal.icon} />

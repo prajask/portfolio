@@ -15,7 +15,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 			flex-col
 			border-2
 			rounded-lg
-			hover:scale-102
+			hover:scale-102 hover:shadow-project-card-hover
 			transition-all ease-out duration-350"
 			style={{
 				borderColor: "var(--project-color-border)",
@@ -23,7 +23,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 		>
 			<figure className="w-full aspect-video relative">
 				<Image
-					className="object-cover"
+					className="object-cover rounded-t-lg"
 					src={project.image}
 					alt=""
 					fill
