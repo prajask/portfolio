@@ -97,13 +97,14 @@ const ProjectHero = ({ project }: ProjectHeroProps) => {
 									href={link.link}
 									target="_blank"
 									rel="noopener noreferrer"
-									className="p-2 flex items-center justify-center space-x-2 bg-background-secondary text-text-primary font-semibold font-nunito
-										border-[1.5px] border-border-secondary
+									className="p-2 flex items-center justify-center space-x-2 text-text-primary font-semibold font-nunito
+										border-[1.5px]
 										rounded-2xl
 										hover:scale-95
 										transition-all ease-out duration-300"
 										style={{
-											backgroundColor: "var(--project-color-accent)"
+											backgroundColor: "var(--project-color-accent)",
+											borderColor: "var(--project-color-border)"
 										}}
 								>
 									<DynamicIcon size="20" icon={link.icon} />

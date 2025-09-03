@@ -19,7 +19,12 @@ const ResearchMethodCard = ({ researchMethod }: ResearchMethodCardProps) => {
 		imageHeight = height;
 	}
 	return (
-		<div className="w-full h-full flex flex-col divide-y divide-border-secondary bg-background-primary border-[1.5px] border-border-secondary rounded-2xl">
+		<div
+			className="w-full h-full flex flex-col divide-y divide-border-secondary bg-background-primary border-[1.5px] border-border-secondary rounded-2xl"
+			style={{
+				borderColor: "var(--project-color-border)",
+			}}
+		>
 			<div className="px-4 py-2 w-full flex flex-col lg:flex-row items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-4 font-plex-mono">
 				<div className="flex items-center space-x-2">
 					<DynamicIcon icon={researchMethod.method.icon} size="20" />

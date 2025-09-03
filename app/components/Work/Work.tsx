@@ -10,7 +10,7 @@ const Work = async () => {
 			id="work"
 		>
 			<div className="w-11/12 max-w-7xl mx-auto">
-				<ul className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12">
+				<ul className="w-full grid grid-cols-1 lg:grid-cols-2 gap-14">
 					{projects &&
 						projects.map((project) => {
 							return (

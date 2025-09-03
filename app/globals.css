@@ -8,13 +8,16 @@
 	--text-secondary: #4d4d4d;
 	--border-primary: #bfbfc6;
 	--border-secondary: #d9d9df;
-	--project-color: #222526;
-	--project-color-accent: #2225260d;
-	--project-color-border: #2225261f --project-background-accent: #e9e9e91f;
+
 	--highlight-primary: #0081af;
 	--highlight-primary-accent: #0081af1f;
 	--highlight-secondary: #e88873;
 	--highlight-secondary-accent: #e888731f;
+
+	--project-color: #222526;
+	--project-color-accent: #2225260d;
+	--project-color-border: #2225261f;
+	--project-background-accent: #e9e9e91f;
 }
 
 @theme {
@@ -34,7 +37,7 @@
 	--font-nunito: var(--font-nunito);
 
 	--shadow-project-card: 2px 2px 8px 2px var(--project-color-accent);
-	--shadow-project-card-hover: 2px 2px 16px 2px var(--project-color-accent);
+	--shadow-project-card-hover: 0px 0px 16px 8px var(--project-color-accent);
 
 	--shadow-primary: 2px 0px 8px 4px #e9e9e97a;
 

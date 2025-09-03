@@ -12,6 +12,7 @@ const TargetUserCard = ({ targetUser }: TargetUserCardProps) => {
 			className="p-4 w-full h-full flex flex-col space-y-4 border-[1.5px] border-border-secondary rounded-2xl"
 			style={{
 				backgroundColor: "var(--project-color-accent)",
+				borderColor: "var(--project-color-border)",
 			}}
 		>
 			<div className="flex space-x-4">

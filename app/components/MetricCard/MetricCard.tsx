@@ -9,6 +9,7 @@ const MetricCard = ({ metric }: MetricCardProps) => {
 			className="p-4 w-full h-full flex flex-col space-y-2 rounded-2xl border-[1.5px] border-border-secondary"
 			style={{
 				backgroundColor: "var(--project-color-accent)",
+				borderColor: "var(--project-color-border)",
 			}}
 		>
 			<p className="font-montserrat font-semibold text-3xl text-text-primary">

@@ -14,7 +14,8 @@ const UpNext = async ({ currentProjectOrder }: UpNextProps) => {
 			className="w-full py-20"
 			style={
 				{
-					"--project-color-accent": nextProject.color + "1e",
+					"--project-color": nextProject.color,
+					"--project-color-border": nextProject.color + "4a",
 				} as CSSProperties
 			}
 		>
