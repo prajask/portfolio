@@ -28,7 +28,7 @@ const page = async (props: { params: Params }) => {
 					return (
 						<section
 							key={index}
-							className={`w-full py-12 bg-project-background-accent`}
+							className={`w-full py-12`}
 						>
 							<div className="w-11/12 xl:w-4/5 max-w-7xl mx-auto">
 								<h2
