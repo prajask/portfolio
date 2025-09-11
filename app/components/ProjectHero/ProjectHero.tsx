@@ -30,7 +30,7 @@ const ProjectHero = ({ project }: ProjectHeroProps) => {
 						{project.description}
 					</h2>
 				</div>
-				<div className="p-4 w-full flex flex-col space-y-4 lg:flex-row justify-between border-[1.5px] border-border-secondary rounded-2xl">
+				<div className="p-4 w-full flex flex-col space-y-4 lg:flex-row justify-between border-1 border-border-secondary rounded-2xl">
 					<div className="flex flex-col space-y-2">
 						<h3
 							className="font-montserrat font-semibold text-lg"
@@ -98,7 +98,7 @@ const ProjectHero = ({ project }: ProjectHeroProps) => {
 									target="_blank"
 									rel="noopener noreferrer"
 									className="p-2 flex items-center justify-center space-x-2 text-text-primary font-semibold font-nunito
-										border-[1.5px]
+										border-1
 										rounded-2xl
 										hover:scale-95
 										transition-all ease-out duration-300"

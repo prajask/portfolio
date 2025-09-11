@@ -41,7 +41,7 @@ const page = () => {
 		<article className="w-full">
 			<section className="w-full py-16">
 				<div className="w-11/12 max-w-7xl mx-auto space-y-8">
-					<div className="w-full flex flex-col border-[1.5px] border-highlight-primary-accent rounded-2xl">
+					<div className="w-full flex flex-col border-1 border-highlight-primary-accent rounded-2xl">
 						<h2 className="p-4 font-montserrat font-semibold text-lg text-highlight-primary tracking-wide border-b-[1.5px] border-highlight-primary-accent">
 							Experience
 						</h2>
@@ -77,7 +77,7 @@ const page = () => {
 						</ul>
 					</div>
 
-					<div className="w-full flex flex-col border-[1.5px] border-highlight-secondary-accent rounded-2xl">
+					<div className="w-full flex flex-col border-1 border-highlight-secondary-accent rounded-2xl">
 						<h2 className="p-4 font-montserrat font-semibold text-lg text-highlight-secondary tracking-wide border-b-1 border-highlight-secondary-accent">
 							Education
 						</h2>

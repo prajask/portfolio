@@ -13,9 +13,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 			href={`/projects/${project.slug}`}
 			className="block w-full h-full
 			flex-col
-			border-2
+			border-1
 			rounded-lg
-			hover:scale-102 hover:shadow-project-card-hover
+			hover:scale-101 hover:shadow-project-card-hover
 			transition-all ease-out duration-350"
 			style={{
 				borderColor: "var(--project-color-border)",
