@@ -20,7 +20,7 @@ const Navbar = async () => {
 				<li>
 					<Link
 						href="/about"
-						className={`transition-all duration-100 ease-linear hover:border-b border-highlight-seconday`}
+						className={`transition-all duration-100 ease-linear hover:border-b border-highlight-secondary`}
 					>
 						About
 					</Link>
@@ -30,7 +30,7 @@ const Navbar = async () => {
 						href={RESUME_LINK.url}
 						target="_blank"
 						rel="noreferrer noopener"
-						className="transition-all duration-100 ease-linear hover:border-b border-highlight-seconday"
+						className="transition-all duration-100 ease-linear hover:border-b border-highlight-secondary"
 					>
 						Resume
 					</Link>

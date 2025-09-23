@@ -12,7 +12,7 @@ const ImageContentComponent = ({ image }: ImageContentComponentProps) => {
 	const { width, height } = getImageDimensions(imageURL);
 
 	return (
-		<figure className="w-full flex items-center justify-center relative">
+		<figure className="w-full h-full flex items-center justify-center relative">
 			<Image
 				className="w-full p-4 max-w-5xl border-1 border-border-secondary bg-background-primary rounded-lg"
 				src={imageURL}

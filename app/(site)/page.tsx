@@ -4,11 +4,11 @@ import Work from "../components/Work/Work";
 export default function Home() {
 	return (
 		<article className="w-full">
-			<section className="py-12 lg:py-24 w-full">
+			<section className="py-16 w-full">
 				<div className=" relative w-11/12 max-w-7xl mx-auto">
 					<div className="w-full flex flex-col items-start space-y-8">
 						<div className="w-full flex flex-col space-y-4 z-10">
-							<h1 className="font-montserrat font-medium text-5xl tracking-wider leading-16">
+							<h1 className="font-montserrat font-semibold text-4xl tracking-wider leading-16">
 								Systems-driven UX Designer & Engineer
 							</h1>
 							<h2 className="w-full font-nunito font-medium text-text-primary text-xl tracking-wide leading-12">
