@@ -4,9 +4,9 @@ import Image from "next/image";
 const page = () => {
 	return (
 		<article className="w-full">
-			<section className="w-full py-20">
-				<div className="w-11/12 max-w-7xl mx-auto flex flex-col space-y-8 lg:flex-row lg:space-x-8 lg:space-y-0 items-start justify-start">
-					<div className="w-full flex flex-col space-y-8">
+			<section className="w-full py-16">
+				<div className="w-11/12 max-w-7xl mx-auto flex flex-col space-y-8 lg:flex-row lg:space-y-0 justify-between">
+					<div className="w-full lg:w-3/5 flex flex-col space-y-8">
 						<h1 className="font-montserrat font-medium text-xl text-text-primary">
 							Hello World!
 						</h1>
@@ -34,9 +34,9 @@ const page = () => {
 							Get in touch
 						</Link> */}
 					</div>
-					<figure className="flex w-full xl:w-1/2 items-center justify-center relative aspect-square bg-radial from-highlight-primary/45 to-background-primary to-60% rounded-lg">
+					<figure className="flex w-1/3 mx-auto lg:mx-0 lg:w-1/4 items-center justify-center relative aspect-square bg-radial from-highlight-primary/45 to-background-primary to-60% rounded-lg">
 						<Image
-							className="w-full px-16 max-w-5xl object-cover"
+							className="w-full max-w-5xl object-cover"
 							src="/me.png"
 							width="2213"
 							height="2213"

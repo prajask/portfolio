@@ -7,13 +7,13 @@ import Footer from "../components/Footer/Footer";
 const montserrat = Montserrat({
 	variable: "--font-montserrat",
 	subsets: ["latin"],
-	weight: ["200", "300", "400", "500", "600", "700"]
+	weight: ["200", "300", "400", "500", "600", "700"],
 });
 
 const nunito = Nunito({
 	variable: "--font-nunito",
 	subsets: ["latin"],
-	weight: ["200", "300", "400", "500", "600", "700"]
+	weight: ["200", "300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -29,15 +29,13 @@ export default function RootLayout({
 	return (
 		<html lang="en" className="scroll-smooth">
 			<body
-				className={`${montserrat.variable} ${nunito.variable} antialiased bg-background-primary selection:bg-highlight-secondary/25`}
+				className={`${montserrat.variable} ${nunito.variable} antialiased bg-background-primary selection:bg-highlight-secondary/25 flex flex-col min-h-screen`}
 			>
-				<header
-					className="w-full"
-				>
+				<header className="w-full">
 					<Navbar />
 				</header>
-				<main>{children}</main>
-				<Footer/>
+				<main className="flex-grow">{children}</main>
+				<Footer />
 			</body>
 		</html>
 	);

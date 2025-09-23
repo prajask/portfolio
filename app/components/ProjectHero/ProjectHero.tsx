@@ -12,8 +12,16 @@ const ProjectHero = ({ project }: ProjectHeroProps) => {
 		<section className="w-full py-12">
 			<div
 				className="w-11/12 max-w-7xl mx-auto
-					flex flex-col space-y-4"
+					flex flex-col space-y-8"
 			>
+				<div className="flex flex-col space-y-4">
+					<h1 className="font-semibold font-montserrat tracking-wide text-4xl text-text-primary">
+						{project.name}
+					</h1>
+					<h2 className="font-nunito font-semibold tracking-wide text-2xl text-text-secondary">
+						{project.description}
+					</h2>
+				</div>
 				<figure className="w-full max-w-6xl mx-auto flex items-center justify-center aspect-video relative">
 					<Image
 						className="w-full object-cover"
@@ -22,22 +30,9 @@ const ProjectHero = ({ project }: ProjectHeroProps) => {
 						fill
 					/>
 				</figure>
-				<div className="pt-4 pb-8 flex flex-col space-y-4">
-					<h1 className="font-semibold font-montserrat tracking-wide text-4xl text-text-primary">
-						{project.name}
-					</h1>
-					<h2 className="font-nunito font-semibold tracking-wide text-2xl text-text-secondary">
-						{project.description}
-					</h2>
-				</div>
-				<div className="p-4 w-full flex flex-col space-y-4 lg:flex-row justify-between border-1 border-border-primary rounded-lg">
+				<div className="w-full flex flex-col space-y-4 lg:flex-row justify-between">
 					<div className="flex flex-col space-y-2">
-						<h3
-							className="font-montserrat font-semibold text-lg"
-							style={{
-								color: "var(--project-color)",
-							}}
-						>
+						<h3 className="font-montserrat font-medium text-text-primary">
 							Skills
 						</h3>
 						<ul className="font-nunito text-text-secondary">
@@ -47,12 +42,7 @@ const ProjectHero = ({ project }: ProjectHeroProps) => {
 						</ul>
 					</div>
 					<div className="flex flex-col space-y-2">
-						<h3
-							className="font-montserrat font-semibold text-lg"
-							style={{
-								color: "var(--project-color)",
-							}}
-						>
+						<h3 className="font-montserrat font-medium text-text-primary">
 							Tools
 						</h3>
 						<ul className="font-nunito text-text-secondary">
@@ -62,12 +52,7 @@ const ProjectHero = ({ project }: ProjectHeroProps) => {
 						</ul>
 					</div>
 					<div className="flex flex-col space-y-2">
-						<h3
-							className="font-montserrat font-semibold text-lg"
-							style={{
-								color: "var(--project-color)",
-							}}
-						>
+						<h3 className="font-montserrat font-medium text-text-primary">
 							Team
 						</h3>
 						<ul className="font-nunito text-text-secondary">
@@ -77,18 +62,15 @@ const ProjectHero = ({ project }: ProjectHeroProps) => {
 						</ul>
 					</div>
 					<div className="flex flex-col space-y-2">
-						<h3
-							className="font-montserrat font-semibold text-lg"
-							style={{
-								color: "var(--project-color)",
-							}}
-						>
+						<h3 className="font-montserrat font-medium text-text-primary">
 							Duration
 						</h3>
-						<p className="font-nunito text-text-secondary">{project.duration}</p>
+						<p className="font-nunito text-text-secondary">
+							{project.duration}
+						</p>
 					</div>
 				</div>
-				<div className="w-full mt-2 flex flex-col lg:flex-row lg:items-center lg:justify-end space-y-6 lg:space-y-0 lg:space-x-6">
+				<div className="w-full flex flex-col lg:flex-row lg:items-center lg:justify-end space-y-6 lg:space-y-0 lg:space-x-6">
 					{project.prototypeLinks &&
 						project.prototypeLinks.map((link, index) => {
 							return (
@@ -102,10 +84,12 @@ const ProjectHero = ({ project }: ProjectHeroProps) => {
 										rounded-2xl
 										hover:scale-95
 										transition-all ease-out duration-300"
-										style={{
-											backgroundColor: "var(--project-color-accent)",
-											borderColor: "var(--project-color-border)"
-										}}
+									style={{
+										backgroundColor:
+											"var(--project-color-accent)",
+										borderColor:
+											"var(--project-color-border)",
+									}}
 								>
 									<DynamicIcon size="20" icon={link.icon} />
 									<span>{link.name}</span>

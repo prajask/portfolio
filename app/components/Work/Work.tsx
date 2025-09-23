@@ -3,13 +3,13 @@ import { CSSProperties } from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 
 const Work = async () => {
-    const projects = await getProjects();
+	const projects = await getProjects();
 	return (
-		<section
-			className="py-20 w-full"
-			id="work"
-		>
+		<section className="py-12 w-full" id="work">
 			<div className="w-11/12 max-w-7xl mx-auto">
+				{/* <h3 className="w-full mb-8 font-montserrat font-medium tracking-wide text-3xl text-text-primary">
+					Featured Work
+				</h3> */}
 				<ul className="w-full grid grid-cols-1 lg:grid-cols-2 gap-16">
 					{projects &&
 						projects.map((project) => {
@@ -20,8 +20,10 @@ const Work = async () => {
 									style={
 										{
 											"--project-color": project.color,
-											"--project-color-accent": project.color + "14",
-											"--project-color-border": project.color + "4a"
+											"--project-color-accent":
+												project.color + "14",
+											"--project-color-border":
+												project.color + "4a",
 										} as CSSProperties
 									}
 								>

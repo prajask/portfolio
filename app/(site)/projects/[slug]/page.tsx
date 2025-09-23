@@ -39,7 +39,7 @@ const page = async (props: { params: Params }) => {
 								>
 									{section.heading}
 								</h3>
-								<h4 className="w-full mb-6 font-montserrat font-semibold tracking-wide text-xl text-text-primary">
+								<h4 className="w-full mb-8 font-montserrat font-semibold tracking-wide text-xl text-text-primary">
 									{section.subHeading}
 								</h4>
 								<div className="w-full flex flex-col space-y-12">
@@ -55,7 +55,7 @@ const page = async (props: { params: Params }) => {
 															return (
 																<div
 																	key={index}
-																	className="w-full flex flex-col space-y-6 lg:space-y-0 lg:flex-row lg:space-x-6"
+																	className="w-full flex flex-col space-y-8 lg:space-y-0 lg:flex-row lg:space-x-8"
 																>
 																	{row.columns.map(
 																		(
@@ -67,7 +67,7 @@ const page = async (props: { params: Params }) => {
 																					key={
 																						index
 																					}
-																					className="w-full flex flex-col space-y-6"
+																					className="w-full flex flex-col space-y-4"
 																				>
 																					{column.contentComponents.map(
 																						(
