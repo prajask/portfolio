@@ -14,27 +14,28 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 			className="block w-full h-full
 			flex-col
 			border-1
-			rounded-lg
+			rounded-md
 			hover:scale-101 hover:shadow-project-card-hover
 			transition-all ease-out duration-350"
 			style={{
 				borderColor: "var(--project-color-border)",
+				backgroundColor: "var(--project-color-accent)"
 			}}
 		>
 			<figure className="w-full aspect-video relative">
 				<Image
-					className="object-cover rounded-t-lg"
+					className="object-cover rounded-t-md"
 					src={project.image}
 					alt=""
 					fill
 				/>
 			</figure>
-			<h2 className="px-4 mt-4 font-montserrat font-bold tracking-wider text-xl text-text-primary">
+			<h4 className="px-4 mt-4 font-montserrat font-semibold tracking-wider text-xl text-text-primary">
 				{project.name}
-			</h2>
-			<h3 className="px-4 py-2 font-nunito font-semibold text-lg tracking-wide text-text-secondary">
+			</h4>
+			<p className="px-4 py-2 font-nunito font-medium text-lg tracking-wide text-text-secondary">
 				{project.description}
-			</h3>
+			</p>
 			<ul
 				className="w-full flex flex-wrap gap-2
 				p-4
@@ -42,18 +43,17 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 			>
 				{project.tags.map((tag, index, { length }) => {
 					return (
-						<>
-							<li
-								style={{
-									color: "var(--project-color)",
-								}}
-							>
-								{tag}
-							</li>
+						<li
+							key={tag}
+							style={{
+								color: "var(--project-color)",
+							}}
+						>
+							{tag} &nbsp;
 							{index != length - 1 && (
 								<span>&nbsp;&middot;&nbsp;</span>
 							)}
-						</>
+						</li>
 					);
 				})}
 			</ul>

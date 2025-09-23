@@ -14,9 +14,9 @@ const Footer = async () => {
 				w-11/12 max-w-7xl mx-auto
             	flex flex-col space-y-8 lg:space-y-0 lg:flex-row lg:items-center lg:justify-between"
 			>
-				<h6 className="font-medium font-nunito text-text-primary">
+				<p className="font-medium font-nunito text-text-primary">
 					<span className="text-xl pt-1">&#169;</span> Prajas Kadepurkar {year}
-				</h6>
+				</p>
 
 				<ul className="mb-4 lg:mb-0 flex items-center lg:justify-start space-x-8">
 					{LINKS.map((link) => {
@@ -29,6 +29,7 @@ const Footer = async () => {
 									rel="noopener noreferrer"
 								>
 									<DynamicIcon size="28" icon={link.icon} />
+									<span className="sr-only">{link.name}</span>
 								</Link>
 							</li>
 						);

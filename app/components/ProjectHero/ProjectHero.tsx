@@ -30,7 +30,7 @@ const ProjectHero = ({ project }: ProjectHeroProps) => {
 						{project.description}
 					</h2>
 				</div>
-				<div className="p-4 w-full flex flex-col space-y-4 lg:flex-row justify-between border-1 border-border-secondary rounded-2xl">
+				<div className="p-4 w-full flex flex-col space-y-4 lg:flex-row justify-between border-1 border-border-primary rounded-lg">
 					<div className="flex flex-col space-y-2">
 						<h3
 							className="font-montserrat font-semibold text-lg"

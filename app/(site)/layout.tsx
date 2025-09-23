@@ -27,9 +27,9 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en" className="scroll-smooth">
 			<body
-				className={`${montserrat.variable} ${nunito.variable} antialiased bg-background-primary scroll-smooth`}
+				className={`${montserrat.variable} ${nunito.variable} antialiased bg-background-primary selection:bg-highlight-secondary/25`}
 			>
 				<header
 					className="w-full"

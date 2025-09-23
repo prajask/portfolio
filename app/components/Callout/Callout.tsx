@@ -8,7 +8,7 @@ type CalloutPros = {
 const CalloutComponent = ({ callout }: CalloutPros) => {
 	return (
 		<div
-			className="p-4 w-full flex flex-col space-y-4 border-1 border-border-secondary rounded-2xl"
+			className="p-4 w-full flex flex-col space-y-4 border-1 border-border-secondary rounded-lg"
 			style={{
 				borderColor: "var(--project-color-border)",
 			}}

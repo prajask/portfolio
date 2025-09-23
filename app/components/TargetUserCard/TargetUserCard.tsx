@@ -9,7 +9,7 @@ type TargetUserCardProps = {
 const TargetUserCard = ({ targetUser }: TargetUserCardProps) => {
 	return (
 		<div
-			className="p-4 w-full h-full flex flex-col space-y-4 border-1 border-border-secondary rounded-2xl"
+			className="p-4 w-full h-full flex flex-col space-y-4 border-1 border-border-secondary rounded-lg"
 			style={{
 				backgroundColor: "var(--project-color-accent)",
 				borderColor: "var(--project-color-border)",

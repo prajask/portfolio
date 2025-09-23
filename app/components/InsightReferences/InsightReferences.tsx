@@ -13,7 +13,7 @@ const InsightReferences = ({ insightReferences }: InsightReferencesProps) => {
 					return (
 						<li
 							key={index}
-							className="p-2 flex items-center space-x-2 rounded-2xl border-1 border-border-secondary"
+							className="p-2 flex items-center space-x-2 rounded-lg border-1 border-border-secondary"
 							style={{
 								borderColor: "var(--project-color-border)",
 							}}
