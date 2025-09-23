@@ -3,53 +3,41 @@ import Work from "../components/Work/Work";
 
 export default function Home() {
 	return (
-		<>
-			<section className="py-12 lg:py-24 w-full bg-gradient-to-br from-highlight-primary-accent via-background-primary to-highlight-secondary-accent bg-size-[200%_200%] animate-gradient">
+		<article className="w-full">
+			<section className="py-12 lg:py-24 w-full">
 				<div className=" relative w-11/12 max-w-7xl mx-auto">
 					<div className="w-full flex flex-col items-start space-y-8">
 						<div className="w-full flex flex-col space-y-4 z-10">
-							<h2 className="font-montserrat font-bold text-4xl tracking-wider leading-16 text-text-primary">
+							<h1 className="font-montserrat font-medium text-5xl tracking-wider leading-16">
 								Systems-driven UX Designer & Engineer
-							</h2>
-							<h3 className="w-full font-montserrat font-medium text-text-primary text-xl tracking-wide leading-12">
+							</h1>
+							<h2 className="w-full font-nunito font-medium text-text-primary text-xl tracking-wide leading-12">
 								Drawing on a background in &nbsp;
-								<span className="inline-flex items-center space-x-2 bg-highlight-secondary-accent leading-6">
+								<span className="inline-flex items-center space-x-2 leading-6 bg-highlight-primary/15">
 									&nbsp;
 									<FiUsers />{" "}
 									<span>Human-Computer Interaction</span>
 									&nbsp;
 								</span>
 								&nbsp; and &nbsp;
-								<span className="inline-flex items-center space-x-2 bg-highlight-primary-accent leading-6">
+								<span className="inline-flex items-center space-x-2 leading-6 bg-highlight-secondary/15">
 									&nbsp;
 									<FiCpu /> <span>Computer Engineering</span>
 									&nbsp;
 								</span>
-								<br />I have growing experience across&nbsp;
-								<span className="inline font-semibold">
-									User Research
-								</span>
-								&nbsp;&middot;&nbsp;
-								<span className="inline font-semibold">
-									Experience Design
-								</span>
-								&nbsp;&middot;&nbsp;
-								<span className="inline font-semibold">
-									Coded Prototyping
-								</span>
-								&nbsp;&middot;&nbsp;
-								<span className="inline font-semibold">
-									Product Strategy
-								</span>
-								<br /> Contributing to User-Centered Experiences
-								in diverse and complex domains.
-							</h3>
+								<br />
+								I have growing experience across User Research,
+								Experience Design, Coded Prototyping &amp;
+								Product Strategy
+								<br />
+								Contributing to User-Centered Experiences in
+								diverse and complex domains.
+							</h2>
 						</div>
-						{/* <HeroLinks /> */}
 					</div>
 				</div>
 			</section>
 			<Work />
-		</>
+		</article>
 	);
 }

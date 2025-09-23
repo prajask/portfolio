@@ -1,115 +1,48 @@
-import { FiBookOpen, FiBriefcase } from "react-icons/fi";
-
-const WORK_EXPERIENCE = [
-	{
-		position: "UX Designer & Engineer",
-		company: "Mosi Audio",
-		duration: "Mar 2025 - Present",
-	},
-	{
-		position: "UX Engineer",
-		company: "IBM",
-		duration: "Apr 2024 - Dec 2024",
-	},
-	{
-		position: "UX Intern - Research & Strategy",
-		company: "Mosi Audio",
-		duration: "Jul 2024 - Sep 2024",
-	},
-	{
-		position: "Software Development Consultant",
-		company: "Capgemini",
-		duration: "Nov 2020 - Jul 2023",
-	},
-];
-
-const EDUCATION = [
-	{
-		school: "University of California, Santa Cruz",
-		degree: "M.S. Human-Computer Interaction",
-		duration: "Sep 2023 - Dec 2024",
-	},
-	{
-		school: "University of Mumbai",
-		degree: "B.E. Computer Engineering",
-		duration: "Aug 2016 - Oct 2020",
-	},
-];
+import Image from "next/image";
+// import Link from "next/link";
 
 const page = () => {
 	return (
 		<article className="w-full">
-			<section className="w-full py-16">
-				<div className="w-11/12 max-w-7xl mx-auto space-y-8">
-					<div className="w-full flex flex-col border-1 border-highlight-primary-accent rounded-2xl">
-						<h2 className="p-4 font-montserrat font-semibold text-lg text-highlight-primary tracking-wide border-b-[1.5px] border-highlight-primary-accent">
-							Experience
-						</h2>
-						<ul className="list-none">
-							{WORK_EXPERIENCE.map(
-								(experience, index, { length }) => {
-									return (
-										<li
-											key={experience.duration}
-											className={`w-full ${index === length - 1 ? "border-b-0 rounded-b-2xl" : "border-b-[1.5px] rounded-b-0"} border-highlight-primary-accent`}
-										>
-											<div className="p-4 flex items-center space-x-4">
-												<FiBriefcase
-													size={24}
-													className="shrink-0"
-												/>
-												<div className="w-full flex flex-col">
-													<h3 className="font-nunito font-semibold text-text-primary">
-														{experience.position}
-													</h3>
-													<h4 className="font-nunito text-text-secondary">
-														{experience.company}
-													</h4>
-													<p className="font-nunito text-text-secondary">
-														{experience.duration}
-													</p>
-												</div>
-											</div>
-										</li>
-									);
-								}
-							)}
-						</ul>
+			<section className="w-full py-20">
+				<div className="w-11/12 max-w-7xl mx-auto flex flex-col space-y-8 lg:flex-row lg:space-x-8 lg:space-y-0 items-start justify-start">
+					<div className="w-full flex flex-col space-y-8">
+						<h1 className="font-montserrat font-medium text-xl text-text-primary">
+							Hello World!
+						</h1>
+						<p className="w-full font-nunito text-lg text-text-secondary leading-8">
+							I design where tech meets real people. My focus is
+							simple, make complex systems understandable and
+							adaptable for humans. I care about clarity, moving
+							quickly through iterations, and basing design on
+							evidence.
+						</p>
+						<p className="w-full font-nunito text-lg text-text-secondary leading-8">
+							I started as a software engineer, focused on
+							building tech. Over time, my curiosity shifted
+							toward the <i>&apos;who&apos;</i> and the{" "}
+							<i>&apos;why&apos;</i>&nbsp; beyond the code, the
+							people using these systems and the user problems
+							they were meant to address. That shift led me to UX,
+							where I now work at the intersection of engineering
+							depth and human experience.
+						</p>
+						{/* <Link
+							href={"/"}
+							className="w-fit px-4 py-2 mt-4 font-montserrat text-text-primary font-medium border-1 border-text-primary hover:bg-text-primary hover:text-background-secondary rounded-lg transition-all ease-in duration-150"
+						>
+							Get in touch
+						</Link> */}
 					</div>
-
-					<div className="w-full flex flex-col border-1 border-highlight-secondary-accent rounded-2xl">
-						<h2 className="p-4 font-montserrat font-semibold text-lg text-highlight-secondary tracking-wide border-b-1 border-highlight-secondary-accent">
-							Education
-						</h2>
-						<ul className="list-none">
-							{EDUCATION.map((education, index, { length }) => {
-								return (
-									<li
-										key={education.duration}
-										className={`w-full ${index === length - 1 ? "border-b-0 rounded-b-2xl" : "border-b-[1.5px] rounded-b-0"} border-highlight-secondary-accent`}
-									>
-										<div className="p-4 flex items-center space-x-4">
-											<FiBookOpen
-												size={24}
-												className="shrink-0"
-											/>
-											<div className="w-full flex flex-col">
-												<h3 className="font-nunito font-semibold text-text-primary">
-													{education.school}
-												</h3>
-												<h4 className="font-nunito text-text-secondary">
-													{education.degree}
-												</h4>
-												<p className="font-nunito text-text-secondary">
-													{education.duration}
-												</p>
-											</div>
-										</div>
-									</li>
-								);
-							})}
-						</ul>
-					</div>
+					<figure className="flex w-full xl:w-1/2 items-center justify-center relative aspect-square bg-radial from-highlight-primary/45 to-background-primary to-60% rounded-lg">
+						<Image
+							className="w-full px-16 max-w-5xl object-cover"
+							src="/me.png"
+							width="2213"
+							height="2213"
+							alt=""
+						/>
+					</figure>
 				</div>
 			</section>
 		</article>

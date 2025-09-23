@@ -20,9 +20,9 @@ const UpNext = async ({ currentProjectOrder }: UpNextProps) => {
 			}
 		>
 			<div className="w-11/12 max-w-7xl mx-auto">
-				<h2 className="w-full mb-8 font-plex-sans font-semibold tracking-wide text-3xl text-text-primary">
+				<h3 className="w-full mb-8 font-plex-sans font-semibold tracking-wide text-3xl text-text-primary">
 					Explore More Work
-				</h2>
+				</h3>
 				<div className="w-full lg:w-1/2">
 					<ProjectCard project={nextProject} />
 				</div>

@@ -20,7 +20,7 @@ const ResearchMethodCard = ({ researchMethod }: ResearchMethodCardProps) => {
 	}
 	return (
 		<div
-			className="w-full h-full flex flex-col divide-y divide-border-secondary bg-background-primary border-1 border-border-secondary rounded-2xl"
+			className="w-full h-full flex flex-col divide-y divide-border-secondary bg-background-primary border-1 border-border-secondary rounded-lg"
 			style={{
 				borderColor: "var(--project-color-border)",
 			}}
