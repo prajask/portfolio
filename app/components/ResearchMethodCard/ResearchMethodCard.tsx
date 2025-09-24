@@ -73,7 +73,7 @@ const ResearchMethodCard = ({ researchMethod }: ResearchMethodCardProps) => {
 										return (
 											<div
 												key={index}
-												className="p-4 w-full h-full flex flex-col space-y-4"
+												className="px-4 py-6 w-full h-full flex flex-col justify-center space-y-4"
 												style={{
 													backgroundColor:
 														"var(--project-color-accent)",
@@ -88,9 +88,11 @@ const ResearchMethodCard = ({ researchMethod }: ResearchMethodCardProps) => {
 														{keyInsight.title}
 													</p>
 												</div>
-												<p className="font-nunito text-text-secondary">
-													{keyInsight.body}
-												</p>
+												{keyInsight.body && (
+													<p className="font-nunito text-text-secondary">
+														{keyInsight.body}
+													</p>
+												)}
 												{keyInsight.cite && (
 													<p className="font-nunito text-sm text-text-secondary">
 														-{keyInsight.cite}
