@@ -7,9 +7,6 @@ const Work = async () => {
 	return (
 		<section className="py-12 w-full" id="work">
 			<div className="w-11/12 max-w-7xl mx-auto">
-				{/* <h3 className="w-full mb-8 font-montserrat font-medium tracking-wide text-3xl text-text-primary">
-					Featured Work
-				</h3> */}
 				<ul className="w-full grid grid-cols-1 lg:grid-cols-2 gap-16">
 					{projects &&
 						projects.map((project) => {

@@ -16,7 +16,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 			border-1
 			rounded-md
 			hover:scale-101 hover:shadow-project-card-hover
-			transition-all ease-out duration-350"
+			transition-transform ease-out duration-350"
 			style={{
 				borderColor: "var(--project-color-border)",
 			}}
