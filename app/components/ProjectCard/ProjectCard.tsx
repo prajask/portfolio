@@ -19,7 +19,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 			transition-all ease-out duration-350"
 			style={{
 				borderColor: "var(--project-color-border)",
-				backgroundColor: "var(--project-color-accent)",
 			}}
 		>
 			<figure className="my-4 w-full aspect-video relative rounded-md overflow-hidden">
