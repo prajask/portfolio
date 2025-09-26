@@ -32,14 +32,14 @@ const page = async (props: { params: Params }) => {
 						>
 							<div className="w-11/12 max-w-6xl mx-auto">
 								<h3
-									className="mb-2 font-nunito font-bold tracking-wide text-xl text-text-secondary"
+									className="mb-2 font-nunito font-bold tracking-wide text-base uppercase"
 									style={{
 										color: "var(--project-color)",
 									}}
 								>
 									{section.heading}
 								</h3>
-								<h4 className="w-full mb-8 font-montserrat font-semibold tracking-wide text-xl text-text-primary">
+								<h4 className="w-full mb-8 font-montserrat font-bold tracking-wider text-xl text-text-primary">
 									{section.subHeading}
 								</h4>
 								<div className="w-full flex flex-col space-y-12">
@@ -67,7 +67,7 @@ const page = async (props: { params: Params }) => {
 																					key={
 																						index
 																					}
-																					className="w-full flex flex-col space-y-4"
+																					className="w-full self-stretch flex flex-col space-y-4"
 																				>
 																					{column.contentComponents.map(
 																						(

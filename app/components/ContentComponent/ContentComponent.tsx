@@ -20,11 +20,10 @@ const ContentComponent = ({ content }: ContentComponentProps) => {
 				<div
 					className="max-w-none h-full
 				prose
-				prose-p:m-0 prose-p:font-nunito prose-p:text-lg/relaxed prose-p:text-text-secondary
+				prose-p:m-0 prose-p:font-nunito prose-p:text-lg/relaxed prose-p:text-text-secondary prose-p:tracking-wide
 				prose-strong:font-bold prose-strong:text-text-secondary
-				prose-h4:m-0 prose-h4:font-nunito prose-h4:font-semibold prose-h4:text-xl prose-h4:text-text-primary
-				prose-h5:font-nunito prose-h5:tracking-wider prose-h5:uppercase prose-h5:text-text-secondary
-				prose-h6:font-nunito prose-h6:font-medium prose-h6:text-lg prose-h6:text-text-primary
+				prose-h5:m-0 prose-h5:font-nunito prose-h5:font-semibold prose-h5:text-xl prose-h5:text-text-primary
+				prose-h6:font-nunito prose-h6:tracking-wider prose-h6:uppercase prose-h6:text-text-secondary
 				prose-ul:font-nunito prose-ul:text-text-secondary prose-ul:text-lg
 				prose-ol:font-nunito prose-ol:text-text-secondary prose-ol:text-lg"
 				>

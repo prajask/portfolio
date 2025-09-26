@@ -15,7 +15,7 @@ const CalloutComponent = ({ callout }: CalloutPros) => {
 		>
 			<div className="w-full flex items-center space-x-2">
 				<DynamicIcon icon={callout.icon} size="32" />
-				<p className="font-nunito font-semibold text-lg text-text-primary">
+				<p className="font-montserrat font-semibold text-lg text-text-primary">
 					{callout.title}
 				</p>
 			</div>

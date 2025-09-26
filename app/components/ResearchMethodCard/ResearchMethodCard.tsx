@@ -1,23 +1,23 @@
 import { ResearchMethod } from "@/types/ResearchMethod";
 import DynamicIcon from "../DynamicIcon/DynamicIcon";
-import Image from "next/image";
-import { urlFor } from "@/sanity/sanity-utils";
-import { getImageDimensions } from "@sanity/asset-utils";
+// import Image from "next/image";
+// import { urlFor } from "@/sanity/sanity-utils";
+// import { getImageDimensions } from "@sanity/asset-utils";
 
 type ResearchMethodCardProps = {
 	researchMethod: ResearchMethod;
 };
 
 const ResearchMethodCard = ({ researchMethod }: ResearchMethodCardProps) => {
-	let imageURL = "";
-	let imageWidth = 0;
-	let imageHeight = 0;
-	if (researchMethod.image) {
-		imageURL = urlFor(researchMethod.image);
-		const { width, height } = getImageDimensions(imageURL);
-		imageWidth = width;
-		imageHeight = height;
-	}
+	// let imageURL = "";
+	// let imageWidth = 0;
+	// let imageHeight = 0;
+	// if (researchMethod.image) {
+	// 	imageURL = urlFor(researchMethod.image);
+	// 	const { width, height } = getImageDimensions(imageURL);
+	// 	imageWidth = width;
+	// 	imageHeight = height;
+	// }
 	return (
 		<div
 			className="w-full h-full flex flex-col divide-y divide-border-secondary bg-background-primary border-1 border-border-secondary rounded-lg"
@@ -25,7 +25,7 @@ const ResearchMethodCard = ({ researchMethod }: ResearchMethodCardProps) => {
 				borderColor: "var(--project-color-border)",
 			}}
 		>
-			<div className="px-4 py-2 w-full flex flex-col lg:flex-row items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-4 font-plex-mono">
+			<div className="px-4 py-2 w-full flex flex-col items-start space-y-2 font-montserrat">
 				<div className="flex items-center space-x-2">
 					<DynamicIcon icon={researchMethod.method.icon} size="20" />
 					<p className="font-montserrat text-text-secondary">
@@ -33,7 +33,7 @@ const ResearchMethodCard = ({ researchMethod }: ResearchMethodCardProps) => {
 					</p>
 				</div>
 
-				<span className="font-montserrat text-text-secondary hidden lg:block">
+				<span className="font-montserrat text-text-secondary hidden">
 					{"/ /"}
 				</span>
 
@@ -47,7 +47,7 @@ const ResearchMethodCard = ({ researchMethod }: ResearchMethodCardProps) => {
 					</p>
 				</div>
 			</div>
-			{researchMethod.keyInsights && (
+			{/* {researchMethod.keyInsights && (
 				<div className="w-full flex flex-col divide-y divide-border-secondary">
 					<p className="p-4 w-full font-montserrat font-medium tracking-wider text-text-primary">
 						Key Insights
@@ -105,7 +105,7 @@ const ResearchMethodCard = ({ researchMethod }: ResearchMethodCardProps) => {
 						</div>
 					</div>
 				</div>
-			)}
+			)} */}
 			<div className="w-full p-4">
 				<p className="font-nunito tracking-wider text-text-secondary text-sm">
 					{researchMethod.goal}
