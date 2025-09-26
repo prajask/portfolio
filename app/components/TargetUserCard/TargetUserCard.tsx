@@ -9,16 +9,16 @@ type TargetUserCardProps = {
 const TargetUserCard = ({ targetUser }: TargetUserCardProps) => {
 	return (
 		<div
-			className="p-4 w-full h-full flex flex-col space-y-4 border-1 border-border-secondary rounded-lg"
+			className="p-4 w-full h-full flex flex-col space-y-4 border-1 rounded-lg"
 			style={{
-				backgroundColor: "var(--project-color-accent)",
 				borderColor: "var(--project-color-border)",
 			}}
 		>
 			<div className="flex space-x-4">
-				<figure className="w-28 h-28 relative">
+				<figure className="w-1/3 aspect-square rounded-sm relative"
+				style={{backgroundColor: "var(--project-color-accent)"}}>
 					<Image
-						className="object-cover"
+						className="w-full object-contain"
 						src={urlFor(targetUser.avatar)}
 						fill
 						alt=""

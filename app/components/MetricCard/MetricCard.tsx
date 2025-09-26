@@ -12,10 +12,10 @@ const MetricCard = ({ metric }: MetricCardProps) => {
 				borderColor: "var(--project-color-border)",
 			}}
 		>
-			<p className="font-montserrat font-semibold text-3xl text-text-primary">
+			<p className="font-montserrat font-semibold text-2xl text-text-primary">
 				{metric.value}
 			</p>
-			<p className="font-nunito text-text-secondary">
+			<p className="font-nunito text-lg text-text-secondary">
 				{metric.metric}
 			</p>
 		</div>

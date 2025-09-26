@@ -18,7 +18,7 @@ const ProjectHero = ({ project }: ProjectHeroProps) => {
 					<h1 className="font-semibold font-montserrat tracking-wide text-4xl text-text-primary">
 						{project.name}
 					</h1>
-					<h2 className="font-nunito font-semibold tracking-wide text-2xl text-text-secondary">
+					<h2 className="font-montserrat font-semibold tracking-wide text-2xl/relaxed text-text-secondary">
 						{project.description}
 					</h2>
 				</div>
