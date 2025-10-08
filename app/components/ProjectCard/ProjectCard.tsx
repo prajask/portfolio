@@ -16,7 +16,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 			border-1
 			rounded-md
 			hover:scale-101 hover:shadow-project-card-hover
-			transition-transform ease-out duration-350"
+			transition-all ease-in duration-150"
 			style={{
 				borderColor: "var(--project-color-border)",
 			}}
@@ -29,9 +29,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 					fill
 				/>
 			</figure>
-			<h4 className="mt-4 font-montserrat font-semibold tracking-wider text-xl text-text-primary">
+			<h3 className="mt-4 font-montserrat font-semibold tracking-wider text-xl text-text-primary">
 				{project.name}
-			</h4>
+			</h3>
 			<p className="py-2 font-nunito font-medium text-lg tracking-wide text-text-secondary">
 				{project.description}
 			</p>
