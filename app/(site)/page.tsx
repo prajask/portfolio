@@ -7,13 +7,13 @@ export default function Home() {
 	return (
 		<article className="w-full">
 			<section className="py-16 w-full">
-				<div className=" relative w-11/12 max-w-7xl mx-auto">
+				<div className="relative w-11/12 max-w-7xl mx-auto">
 					<div className="w-full flex flex-col items-start space-y-8">
-						<div className="w-full flex flex-col space-y-4 z-10">
-							<h1 className="font-montserrat font-semibold text-4xl tracking-wider leading-16">
-								Systems-driven UX Designer & Engineer
+						<div className="w-full flex flex-col space-y-10 z-10">
+							<h1 className="inline-block font-montserrat font-bold text-4xl tracking-wider leading-16 bg-gradient-to-b from-text-primary from-40% to-background-primary to-100% text-transparent bg-clip-text">
+								Systems-driven Product Designer
 							</h1>
-							<h2 className="w-full font-nunito font-medium text-text-primary text-xl tracking-wide leading-12">
+							<h2 className="w-full font-nunito font-medium text-text-primary text-2xl tracking-wide leading-12">
 								Drawing on a background in &nbsp;
 								<span
 									className="relative inline-flex items-center space-x-2 leading-6 bg-highlight-primary/15 cursor-default group"
@@ -69,13 +69,14 @@ export default function Home() {
 									<FiCpu /> <span>Computer Engineering</span>
 									&nbsp;
 								</span>
+								<br />I blend&nbsp;
+								<span className="font-bold">
+									UX Design, Interactive Prototyping &amp;
+									Product Strategy
+								</span>
 								<br />
-								I have growing experience across <span className="font-bold">User Research,
-								Experience Design, Coded Prototyping &amp;
-								Product Strategy</span>
-								<br />
-								Contributing to User-Centered Experiences in
-								diverse and complex tech domains.
+								To shape user-centered experiences across
+								diverse tech domains.
 							</h2>
 						</div>
 					</div>
