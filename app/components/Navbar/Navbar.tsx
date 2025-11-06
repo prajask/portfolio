@@ -1,8 +1,35 @@
+"use client";
+
 import { getResumeLink } from "@/sanity/sanity-utils";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
-const Navbar = async () => {
-	const RESUME_LINK = await getResumeLink();
+const Navbar = () => {
+	const [RESUME_LINK, setResumeLink] = useState(String);
+
+	useEffect(() => {
+		async function fetchNavLinks() {
+			const res = await getResumeLink();
+			if (res.url) setResumeLink(res.url);
+		}
+		fetchNavLinks();
+	}, []);
+
+	const LINKS = [
+		{
+			name: "About",
+			url: "/about",
+			target: "_self",
+		},
+		{
+			name: "Resume",
+			url: RESUME_LINK,
+			target: "_blank",
+		},
+	];
+
+	const PATHNAME = usePathname();
 
 	return (
 		<nav
@@ -17,24 +44,20 @@ const Navbar = async () => {
 				Prajas K.
 			</Link>
 			<ul className="flex space-x-8 font-nunito text-lg text-text-secondary">
-				<li>
-					<Link
-						href="/about"
-						className={`transition-all duration-100 ease-linear hover:border-b border-highlight-secondary`}
-					>
-						About
-					</Link>
-				</li>
-				<li>
-					<Link
-						href={RESUME_LINK.url}
-						target="_blank"
-						rel="noreferrer noopener"
-						className="transition-all duration-100 ease-linear hover:border-b border-highlight-secondary"
-					>
-						Resume
-					</Link>
-				</li>
+				{LINKS.map((link) => {
+					return (
+						<li key={link.name}>
+							<Link
+								href={link.url}
+								target={link.target}
+								rel="noreferrer noopener"
+								className={`hover:border-b border-highlight-secondary ${PATHNAME === link.url ? "border-b" : ""}`}
+							>
+								{link.name}
+							</Link>
+						</li>
+					);
+				})}
 			</ul>
 		</nav>
 	);
