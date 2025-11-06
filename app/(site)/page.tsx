@@ -10,7 +10,7 @@ export default function Home() {
 				<div className="relative w-11/12 max-w-7xl mx-auto">
 					<div className="w-full flex flex-col items-start space-y-8">
 						<div className="w-full flex flex-col space-y-10 z-10">
-							<h1 className="inline-block font-montserrat font-bold text-4xl tracking-wider leading-16 bg-gradient-to-b from-text-primary from-40% to-background-primary to-100% text-transparent bg-clip-text">
+							<h1 className="inline-block font-montserrat font-bold text-4xl tracking-wider leading-16 text-text-primary">
 								Systems-driven Product Designer
 							</h1>
 							<h2 className="w-full font-nunito font-medium text-text-primary text-2xl tracking-wide leading-12">
