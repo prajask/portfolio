@@ -16,17 +16,19 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 			border-1
 			rounded-md
 			hover:scale-101 hover:shadow-project-card-hover
-			transition-all ease-in duration-150"
+			transition-all ease-out duration-200
+			group"
 			style={{
 				borderColor: "var(--project-color-border)",
 			}}
 		>
-			<figure className="w-full aspect-video relative rounded-t-sm overflow-hidden">
+			<figure className="p-2 w-full aspect-video relative overflow-hidden group-hover:p-0 transition-all ease-out duration-200">
 				<Image
-					className="object-cover"
+					className="object-cover rounded-sm group-hover:rounded-b-none"
 					src={project.image}
 					alt=""
-					fill
+					width={1920}
+					height={1080}
 				/>
 			</figure>
 			<h3 className="px-4 mt-4 font-montserrat font-semibold tracking-wider text-xl text-text-primary">

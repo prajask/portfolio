@@ -6,14 +6,14 @@ import Image from "next/image";
 export default function Home() {
 	return (
 		<article className="w-full">
-			<section className="py-16 w-full">
+			<section className="pt-16 pb-32 w-full hero-section">
 				<div className="relative w-11/12 max-w-7xl mx-auto">
 					<div className="w-full flex flex-col items-start space-y-8">
-						<div className="w-full flex flex-col space-y-10 z-10">
-							<h1 className="inline-block font-montserrat font-bold text-4xl tracking-wider leading-16 text-text-primary">
+						<div className="w-full flex flex-col space-y-8 z-10">
+							<h1 className="inline-block font-montserrat font-bold text-2xl md:text-4xl tracking-wider leading-12 md:leading-16 text-text-primary">
 								Systems-driven Product Designer
 							</h1>
-							<h2 className="w-full font-nunito font-medium text-text-primary text-2xl tracking-wide leading-12">
+							<h2 className="w-full font-nunito font-medium text-text-primary text-lg md:text-2xl tracking-wide leading-12">
 								Drawing on a background in &nbsp;
 								<span
 									className="relative inline-flex items-center space-x-2 leading-6 bg-highlight-primary/15 cursor-default group"
@@ -75,8 +75,13 @@ export default function Home() {
 									Product Strategy
 								</span>
 								<br />
-								To shape user-centered experiences across
-								diverse tech domains.
+								To shape User-centered Experiences across{" "}
+								<span className="font-bold">Digital</span> &
+								digitally connected{" "}
+								<span className="font-bold">
+									Physical Interfaces
+								</span>
+								.
 							</h2>
 						</div>
 					</div>
