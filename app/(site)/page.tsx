@@ -11,7 +11,7 @@ export default function Home() {
 					<div className="w-full flex flex-col items-start space-y-8">
 						<div className="w-full flex flex-col space-y-8 z-10">
 							<h1 className="inline-block font-montserrat font-bold text-2xl md:text-4xl tracking-wider leading-12 md:leading-16 text-text-primary">
-								Systems-driven Product Designer
+								Systems-driven UX Designer & Engineer
 							</h1>
 							<h2 className="w-full font-nunito font-medium text-text-primary text-lg md:text-2xl tracking-wide leading-12">
 								Drawing on a background in &nbsp;
