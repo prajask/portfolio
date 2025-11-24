@@ -77,9 +77,8 @@ export default function Home() {
 								<br />
 								To shape User-centered Experiences across{" "}
 								<span className="font-bold">Digital</span> &
-								digitally connected{" "}
 								<span className="font-bold">
-									Physical Interfaces
+									Tangible Interfaces
 								</span>
 								.
 							</h2>
