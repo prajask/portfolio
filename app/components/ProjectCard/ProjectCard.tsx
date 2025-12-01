@@ -11,45 +11,35 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 	return (
 		<Link
 			href={`/projects/${project.slug}`}
-			className="block w-full h-full
+			className="block
+			p-8
+			w-full h-full
 			flex-col
 			border-1
-			rounded-md
-			hover:scale-101 hover:shadow-project-card-hover
-			transition-all ease-out duration-200
-			group"
+			hover:-translate-y-1 hover:rotate-1 hover:scale-101
+			transition-all ease-[cubic-bezier(0.18,0.89,0.32,1.28)] duration-200
+			project-gradient"
 			style={{
 				borderColor: "var(--project-color-border)",
 			}}
 		>
-			<figure className="p-2 w-full aspect-video relative overflow-hidden group-hover:p-0 transition-all ease-out duration-200">
+			<figure className="w-full aspect-video relative overflow-hidden">
 				<Image
-					className="object-cover rounded-sm group-hover:rounded-b-none"
+					className="object-cover group-hover:rounded-b-none"
 					src={project.image}
 					alt=""
 					width={1920}
 					height={1080}
 				/>
 			</figure>
-			<h3 className="px-4 mt-4 font-montserrat font-semibold tracking-wider text-xl text-text-primary">
-				{project.name}
-			</h3>
-			<p className="px-4 py-2 font-nunito font-medium text-lg tracking-wide text-text-secondary">
-				{project.description}
-			</p>
 			<ul
-				className="w-full flex flex-wrap gap-2
-				px-4 py-4
-				font-nunito font-semibold text-xs text-text-secondary uppercase tracking-wider"
+				className="py-4 w-full
+				flex flex-wrap gap-2
+				font-plex-mono text-xs text-text-secondary uppercase tracking-widest"
 			>
 				{project.tags.map((tag, index, { length }) => {
 					return (
-						<li
-							key={tag}
-							style={{
-								color: "var(--project-color)",
-							}}
-						>
+						<li key={tag}>
 							{tag} &nbsp;
 							{index != length - 1 && (
 								<span>&nbsp;&middot;&nbsp;</span>
@@ -58,6 +48,12 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 					);
 				})}
 			</ul>
+			<h3 className="mt-2 font-montserrat font-semibold tracking-wider text-xl text-text-primary">
+				{project.name}
+			</h3>
+			<p className="pt-2 font-montserrat font-medium tracking-wider text-text-secondary">
+				{project.description}
+			</p>
 		</Link>
 	);
 };

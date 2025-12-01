@@ -8,13 +8,13 @@ type CalloutPros = {
 const CalloutComponent = ({ callout }: CalloutPros) => {
 	return (
 		<div
-			className="p-4 w-full h-full flex flex-col space-y-4 border-1 border-border-secondary rounded-lg"
+			className="p-4 w-full h-full flex flex-col space-y-4 border-1 border-border-secondary"
 			style={{
 				borderColor: "var(--project-color-border)",
 			}}
 		>
 			<div className="w-full flex items-center space-x-2">
-				<DynamicIcon icon={callout.icon} size="32" />
+				<DynamicIcon icon={callout.icon} size="32" color="var(--project-color-icon)" />
 				<p className="font-montserrat font-semibold text-lg text-text-primary">
 					{callout.title}
 				</p>

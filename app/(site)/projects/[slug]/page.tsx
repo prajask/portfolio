@@ -3,6 +3,7 @@ import ProjectHero from "@/app/components/ProjectHero/ProjectHero";
 import UpNext from "@/app/components/UpNext/UpNext";
 import { getProjectContent } from "@/sanity/sanity-utils";
 import { CSSProperties } from "react";
+import { LuTerminal } from "react-icons/lu";
 
 type Params = Promise<{ slug: string }>;
 
@@ -17,8 +18,10 @@ const page = async (props: { params: Params }) => {
 			style={
 				{
 					"--project-color": projectContent.color,
-					"--project-color-accent": projectContent.color + "14",
-					"--project-color-border": projectContent.color + "4a",
+					"--project-color-accent": projectContent.color + "0D",
+					"--project-color-border": projectContent.color + "1A",
+					"--project-color-gradient": projectContent.color + "1A",
+					"--project-color-icon": "color-mix(in srgb, var(--project-color) 25%, var(--color-text-primary))"
 				} as CSSProperties
 			}
 		>
@@ -26,17 +29,19 @@ const page = async (props: { params: Params }) => {
 			{projectContent.content &&
 				projectContent.content.map((section, index) => {
 					return (
-						<section
-							key={index}
-							className={`w-full py-12`}
-						>
+						<section key={index} className={`w-full py-12`}>
 							<div className="w-11/12 max-w-6xl mx-auto">
 								<h3
-									className="mb-2 font-nunito font-bold tracking-wide text-base uppercase"
+									className="mb-2 font-plex-mono font-bold tracking-wider text-base uppercase flex items-end space-x-2"
 									style={{
-										color: "var(--project-color)",
+										color: "color-mix(in srgb, var(--project-color) 80%, var(--color-text-primary))",
 									}}
 								>
+									<LuTerminal
+										size={20}
+										color="color-mix(in srgb, var(--project-color) 80%, var(--color-text-primary))"
+										aria-hidden
+									/>
 									{section.heading}
 								</h3>
 								<h4 className="w-full mb-8 font-montserrat font-bold tracking-wider text-xl text-text-primary">

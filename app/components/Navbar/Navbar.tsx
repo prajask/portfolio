@@ -4,6 +4,7 @@ import { getResumeLink } from "@/sanity/sanity-utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { BsArrowUpRight } from "react-icons/bs";
 
 const Navbar = () => {
 	const [RESUME_LINK, setResumeLink] = useState(String);
@@ -33,17 +34,17 @@ const Navbar = () => {
 
 	return (
 		<nav
-			className="py-6
-            w-11/12 max-w-7xl mx-auto
+			className="py-4
+			w-11/12 max-w-7xl mx-auto
             flex items-center justify-between"
 		>
 			<Link
-				className="font-montserrat text-2xl font-bold tracking-wider text-text-primary"
+				className="py-2 font-montserrat text-2xl font-bold tracking-wider text-text-primary"
 				href="/"
 			>
 				Prajas K.
 			</Link>
-			<ul className="flex space-x-8 font-nunito text-lg text-text-secondary">
+			<ul className="flex space-x-8 font-plex-mono text-text-secondary">
 				{LINKS.map((link) => {
 					return (
 						<li key={link.name}>
@@ -51,9 +52,10 @@ const Navbar = () => {
 								href={link.url}
 								target={link.target}
 								rel="noreferrer noopener"
-								className={`hover:border-b border-highlight-secondary ${PATHNAME === link.url ? "border-b" : ""}`}
+								className={`py-2 flex items-center space-x-2 hover:border-b border-highlight-primary ${PATHNAME === link.url && "border-b"} ${link.name === "Resume" && "bg-highlight-primary/25 hover:border-none hover:scale-95 transition-transform ease-in duration-100 px-4"}`}
 							>
-								{link.name}
+								<span>{link.name}</span>
+								{link.name === "Resume" && <BsArrowUpRight/>}
 							</Link>
 						</li>
 					);

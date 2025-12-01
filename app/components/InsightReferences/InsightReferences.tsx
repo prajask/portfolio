@@ -8,18 +8,18 @@ type InsightReferencesProps = {
 const InsightReferences = ({ insightReferences }: InsightReferencesProps) => {
 	return (
 		<div className="w-full">
-			<ul className="flex items-center space-x-4 space-y-4 md:space-y-0 flex-wrap">
+			<ul className="flex items-center gap-4 md:space-y-0 flex-wrap">
 				{insightReferences.reference.map((insight, index) => {
 					return (
 						<li
 							key={index}
-							className="p-2 flex items-center space-x-2 rounded-lg border-1 border-border-secondary"
+							className="p-2 flex items-center space-x-2 border-1"
 							style={{
 								borderColor: "var(--project-color-border)",
 							}}
 						>
-							<DynamicIcon icon={insight.icon} size="20" />
-							<span className="font-nunito text-text-secondary">
+							<DynamicIcon icon={insight.icon} size="20" color="var(--project-color-icon)"/>
+							<span className="font-plex-mono text-text-secondary">
 								{insight.tag}
 							</span>
 						</li>

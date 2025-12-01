@@ -15,8 +15,9 @@ const UpNext = async ({ currentProjectOrder }: UpNextProps) => {
 			style={
 				{
 					"--project-color": nextProject.color,
-					"--project-color-border": nextProject.color + "4a",
-					"--project-color-accent": nextProject.color + "14",
+					"--project-color-border": nextProject.color + "1A",
+					"--project-color-accent": nextProject.color + "0D",
+					"--project-color-gradient": nextProject.color + "1A",
 				} as CSSProperties
 			}
 		>

@@ -7,7 +7,12 @@ const Work = async () => {
 	return (
 		<section className="py-12 w-full" id="work">
 			<div className="w-11/12 max-w-7xl mx-auto">
-				<ul className="w-full grid grid-cols-1 lg:grid-cols-2 gap-16">
+				{/* <h3 className="mb-16 font-montserrat font-bold text-3xl text-text-primary tracking-wider">
+					<span className="text-highlight-primary">F</span>
+					eatured&nbsp;
+					<span className="text-highlight-primary">W</span>ork
+				</h3> */}
+				<ul className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12">
 					{projects &&
 						projects.map((project) => {
 							return (
@@ -18,9 +23,11 @@ const Work = async () => {
 										{
 											"--project-color": project.color,
 											"--project-color-accent":
-												project.color + "14",
+												project.color + "0D",
 											"--project-color-border":
-												project.color + "4a",
+												project.color + "1A",
+											"--project-color-gradient":
+												project.color + "1A",
 										} as CSSProperties
 									}
 								>
