@@ -7,6 +7,7 @@ import type { IconType } from "react-icons";
 type DynamicIconProps = {
 	icon: ReactIcon;
 	size: string;
+	color: string;
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -35,7 +36,7 @@ const packMap: Record<string, () => Promise<any>> = {
 	wi: () => import("react-icons/wi"),
 };
 
-const DynamicIcon = ({ icon, size }: DynamicIconProps) => {
+const DynamicIcon = ({ icon, size, color }: DynamicIconProps) => {
 	const Icon = dynamic(
 		async () => {
 			const packLoader = packMap[icon.iconPack.toLowerCase()];
@@ -50,7 +51,7 @@ const DynamicIcon = ({ icon, size }: DynamicIconProps) => {
 		}
 	);
 
-	return <Icon className="shrink-0" size={size} />;
+	return <Icon className="shrink-0" size={size} color={color}/>;
 };
 
 export default DynamicIcon;

@@ -21,7 +21,7 @@ const HeroLinks = async () => {
 							rel="noopener noreferrer"
 							className="flex items-center justify-center space-x-2 text-text-primary text-2xl font-medium font-nunito hover:scale-105 transition-all duration-100 ease-in"
 						>
-							<DynamicIcon size="24" icon={link.icon} />
+							<DynamicIcon size="24" icon={link.icon} color="var(--color-text-secondary)" />
 							<span>{link.name == "Email" ? "kadepurkarprajas@gmail.com" : link.name}</span>
 						</Link>
 					)

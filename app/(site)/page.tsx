@@ -1,88 +1,75 @@
-import { FiCpu, FiUsers } from "react-icons/fi";
+import { BsBoundingBox, BsTerminal } from "react-icons/bs";
 import Work from "../components/Work/Work";
-import ToolTip from "../components/ToolTip/ToolTip";
-import Image from "next/image";
+// import Link from "next/link";
+// import { PiBezierCurveThin, PiCodeThin, PiCursorClickThin } from "react-icons/pi";
 
 export default function Home() {
 	return (
 		<article className="w-full">
-			<section className="pt-16 pb-32 w-full hero-section">
-				<div className="relative w-11/12 max-w-7xl mx-auto">
-					<div className="w-full flex flex-col items-start space-y-8">
-						<div className="w-full flex flex-col space-y-8 z-10">
-							<h1 className="inline-block font-montserrat font-bold text-2xl md:text-4xl tracking-wider leading-12 md:leading-16 text-text-primary">
-								Systems-driven UX Designer & Engineer
-							</h1>
-							<h2 className="w-full font-nunito font-medium text-text-primary text-lg md:text-2xl tracking-wide leading-12">
-								Drawing on a background in &nbsp;
-								<span
-									className="relative inline-flex items-center space-x-2 leading-6 bg-highlight-primary/15 cursor-default group"
-									aria-describedby="degree-hci"
-								>
-									<ToolTip
-										className="bg-highlight-primary/15 border-highlight-primary"
-										id="degree-hci"
-									>
-										<Image
-											className="w-52 aspect-[4/1] object-contain"
-											src="/ucsc.png"
-											width="1635"
-											height="319"
-											alt=""
-										/>
-										<p className="font-montserrat text-sm font-semibold text-text-primary">
-											M.S. Human-Computer Interaction
-										</p>
-										<p className="font-nunito text-sm text-text-secondary">
-											University of California, Santa Cruz
-										</p>
-									</ToolTip>
-									&nbsp;
-									<FiUsers />{" "}
-									<span>Human-Computer Interaction</span>
-									&nbsp;
+			<section className="relative w-full bg-texture">
+				<div
+					className="relative
+					py-18
+					w-11/12 max-w-7xl
+					mx-auto
+					flex flex-col"
+				>
+					<div
+						className="w-full
+					flex flex-col justifu-end space-y-8"
+					>
+						<h1
+							className="flex flex-col space-y-4 font-montserrat font-bold text-4xl lg:text-5xl text-text-primary tracking-wider"
+							aria-label="user experience designer and engineer"
+						>
+							<span className="font-plex-mono font-medium text-2xl lg:text-3xl">
+								<span className="text-highlight-primary">
+									u
 								</span>
-								&nbsp; and &nbsp;
-								<span
-									className="relative inline-flex items-center space-x-2 leading-6 bg-highlight-secondary/15 cursor-default group"
-									aria-describedby="degree-ce"
-								>
-									<ToolTip
-										className="bg-highlight-secondary/15"
-										id="degree-ce"
-									>
-										<Image
-											className="w-20 aspect-[16/18] object-contain"
-											src="/mu.png"
-											width="612"
-											height="723"
-											alt=""
-										/>
-										<p className="font-montserrat text-sm font-semibold text-text-primary">
-											B.E. Computer Engineering
-										</p>
-										<p className="font-nunito text-sm text-text-secondary">
-											University of Mumbai
-										</p>
-									</ToolTip>
-									&nbsp;
-									<FiCpu /> <span>Computer Engineering</span>
-									&nbsp;
+								ser e
+								<span className="text-highlight-primary">
+									x
 								</span>
-								<br />I blend&nbsp;
-								<span className="font-bold">
-									UX Design, Interactive Prototyping &amp;
-									Product Strategy
+								perience
+							</span>
+							<span className="flex items-center flex-wrap gap-6">
+								<span className="flex items-center space-x-4">
+									<BsBoundingBox
+										size={40}
+										color="var(--color-text-primary)"
+										aria-hidden="true"
+									/>
+									<span>
+										<span className="text-highlight-primary">
+											D
+										</span>
+										esigner
+									</span>
 								</span>
-								<br />
-								To shape User-centered Experiences across{" "}
-								<span className="font-bold">Digital</span> &
-								<span className="font-bold">
-									Tangible Interfaces
+
+								<span className="font-plex-mono font-light text-text-secondary">
+									&amp;
 								</span>
-								.
-							</h2>
-						</div>
+
+								<span className="flex items-center space-x-4">
+									<BsTerminal
+										size={40}
+										color="var(--color-text-primary)"
+										aria-hidden="true"
+									/>
+									<span>
+										<span className="text-highlight-primary">
+											E
+										</span>
+										ngineer
+									</span>
+								</span>
+							</span>
+						</h1>
+						<h2 className="font-montserrat font-medium text-2xl text-text-secondary tracking-wide leading-12">
+							I build Human-Centered Experiences <br />
+							for Digital & Tangible Interfaces
+						</h2>
 					</div>
 				</div>
 			</section>

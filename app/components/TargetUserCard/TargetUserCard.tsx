@@ -9,33 +9,29 @@ type TargetUserCardProps = {
 const TargetUserCard = ({ targetUser }: TargetUserCardProps) => {
 	return (
 		<div
-			className="p-4 w-full h-full flex flex-col space-y-4 border-1 rounded-lg"
+			className="w-full h-full flex items-end"
 			style={{
 				borderColor: "var(--project-color-border)",
+				backgroundColor: "var(--project-color-accent)",
 			}}
 		>
-			<div className="flex space-x-4">
-				<figure className="w-1/3 aspect-square rounded-sm relative"
-				style={{backgroundColor: "var(--project-color-accent)"}}>
-					<Image
-						className="w-full object-contain"
-						src={urlFor(targetUser.avatar)}
-						fill
-						alt=""
-					/>
-				</figure>
-				<div className="w-full self-stretch flex flex-col justify-end space-y-1">
-					<p className="font-montserrat font-medium text-text-primary">
-						{targetUser.name}
-					</p>
-					<p className="font-montserrat font-medium text-lg text-text-primary">
-						{targetUser.background}
-					</p>
+			<figure className="relative w-1/3 aspect-[719/850]" style={{}}>
+				<Image
+					src={urlFor(targetUser.avatar)}
+					alt=""
+					aria-hidden
+					width={720}
+					height={850}
+					className="w-full"
+				/>
+			</figure>
+			<div className="pt-8 pb-4 px-6 w-full flex flex-col space-y-4">
+				<q className="font-montserrat text-text-primary">{targetUser.quote}</q>
+				<div className="w-full flex flex-col space-y-1">
+					{/* <p className="font-plex-mono text-text-secondary">{targetUser.name}</p> */}
+					<p className="font-plex-mono text-text-secondary">{targetUser.background}</p>
 				</div>
 			</div>
-			<q className="font-nunito text-text-secondary text-lg">
-				{targetUser.quote}
-			</q>
 		</div>
 	);
 };
