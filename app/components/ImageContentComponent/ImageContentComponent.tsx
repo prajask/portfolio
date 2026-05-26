@@ -14,12 +14,11 @@ const ImageContentComponent = ({ image }: ImageContentComponentProps) => {
 	return (
 		<figure className="w-full h-full flex items-center justify-center relative">
 			<Image
-				className="w-full h-full p-4 max-w-5xl border-1 object-contain"
+				className="w-full h-full p-4 max-w-5xl border border-border-primary/25 object-contain"
 				src={imageURL}
 				width={width}
 				height={height}
 				alt=""
-				style={{borderColor: "var(--project-color-border)"}}
 			/>
 		</figure>
 	);

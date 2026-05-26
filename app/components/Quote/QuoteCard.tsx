@@ -7,10 +7,9 @@ type QuoteCardProps = {
 const QuoteCard = ({ quote }: QuoteCardProps) => {
 	return (
 		<div
-			className="p-4 w-full h-full flex flex-col space-y-2 border-1 border-border-secondary"
+			className="p-4 w-full h-full flex flex-col space-y-2"
 			style={{
 				backgroundColor: "var(--project-color-accent)",
-				borderColor: "var(--project-color-border)",
 			}}
 		>
 			<RiDoubleQuotesL size={32} color="var(--project-color-icon)"/>
