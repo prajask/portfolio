@@ -52,7 +52,7 @@ const Navbar = () => {
 								href={link.url}
 								target={link.target}
 								rel="noreferrer noopener"
-								className={`py-2 flex items-center space-x-2 hover:border-b border-highlight-primary ${PATHNAME === link.url && "border-b"} ${link.name === "Resume" && "bg-highlight-primary/25 hover:border-none hover:scale-95 transition-transform ease-in duration-100 px-4"}`}
+								className={`py-2 flex items-center space-x-2 border-b border-b-transparent hover:border-border-primary ${PATHNAME === link.url && "border-b-border-primary"} ${link.name === "Resume" && "bg-border-primary text-background-primary hover:border-none hover:scale-95 transition-transform ease-in duration-100 px-2"}`}
 							>
 								<span>{link.name}</span>
 								{link.name === "Resume" && <BsArrowUpRight/>}

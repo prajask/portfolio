@@ -9,7 +9,7 @@ type ProjectHeroProps = {
 
 const ProjectHero = ({ project }: ProjectHeroProps) => {
 	return (
-		<section className="relative w-full py-12 bg-texture">
+		<section className="relative w-full py-12 project-gradient">
 			<div
 				className="w-11/12 max-w-7xl mx-auto
 					flex flex-col space-y-8"
@@ -59,7 +59,7 @@ const ProjectHero = ({ project }: ProjectHeroProps) => {
 								})}
 						</div>
 					</div>
-					<figure className="w-full max-w-7xl mx-auto flex items-center justify-center aspect-video relative project-gradient">
+					<figure className="w-max max-w-7xl mx-auto flex items-center justify-center aspect-video relative">
 						<Image
 							className="w-full object-cover"
 							src={project.image}

@@ -12,7 +12,7 @@ const Work = async () => {
 					eatured&nbsp;
 					<span className="text-highlight-primary">W</span>ork
 				</h3> */}
-				<ul className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12">
+				<ul className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
 					{projects &&
 						projects.map((project) => {
 							return (
